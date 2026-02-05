@@ -1,8 +1,8 @@
 ---
-title: "Papers Archive"
+title: "Papers"
 ---
 
-Papers are organized by year of initial publication. Each paper may have multiple versions as authors update their work.
+Each paper lives in its own repository with its own DOI.
 
 ## 2025
 
@@ -10,12 +10,10 @@ Papers are organized by year of initial publication. Each paper may have multipl
 
 ---
 
-## How Papers Are Numbered
+## How It Works
 
-Papers are numbered sequentially: 001, 002, 003, etc. The number never changes, even if the paper is updated.
+Each paper is a separate GitHub repository under our organization. When a paper is ready, we tag a release and Zenodo automatically mints a DOI.
 
-Version numbers (v1.0, v1.1, v2.0) track revisions:
+Papers can be updated anytime. New releases get new DOIs. Old versions remain citable.
 
-- **Patch** (v1.0.1): Typo fixes, dependency updates
-- **Minor** (v1.1): New analysis, additional data, improved visualizations
-- **Major** (v2.0): Substantial rewrite, new conclusions
+[Submit your own →](../submit.qmd)

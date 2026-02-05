@@ -20,108 +20,109 @@ Topics include but are not limited to:
 - Critical analysis of search and retrieval methods
 - Benchmarking AI tools on historical sources
 
-## What We Need
+## How to Submit
 
-### Code That Shows Your Work
+### Step 1: Create Your Paper Repo
 
-Every submission should include the code you used. This doesn't mean it has to run on a reviewer's laptop - if you needed an HPC cluster with H100s and 30 hours of compute time, just tell us that. The point is transparency about methods, not enforcing that everything be instantly reproducible.
+1. Go to our [paper template](https://github.com/Working-Papers-in-Critical-Search/paper-template)
+2. Click **"Use this template"** → **"Create a new repository"**
+3. Create it in **your own GitHub account** (not the org)
+4. Name it something like `paper-your-short-title`
 
-### Supported Formats
+### Step 2: Write Your Paper
 
-- **Quarto** (`.qmd`) — Preferred
-- **Jupyter Notebook** (`.ipynb`) — We'll convert to Quarto
-- **R Markdown** (`.Rmd`) — We'll convert to Quarto
-- **Scripts + writeup** — We can work with this too
+Clone your repo and edit `index.qmd`. Structure it however makes sense for your work.
+
+```bash
+git clone https://github.com/YOUR-USERNAME/paper-your-title.git
+cd paper-your-title
+# edit index.qmd
+quarto preview  # see it locally
+```
+
+Include your code. If your analysis requires serious compute (HPC cluster, days of runtime), just say so honestly. The point is showing your work, not pretending everything runs on a laptop.
+
+### Step 3: Transfer to the Organization
+
+When you're ready for editorial review:
+
+1. Go to your repo's **Settings**
+2. Scroll to **Danger Zone**
+3. Click **Transfer ownership**
+4. Transfer to: `Working-Papers-in-Critical-Search`
+
+Your full commit history, issues, and everything else comes with it.
+
+### Step 4: Editorial Review
+
+We'll review your submission:
+
+- Does it fit our scope?
+- Is the code/method documented enough to understand?
+- Any obvious issues?
+
+We may request changes via pull request. This is gatekeeping, not formal peer review — we're checking for fit and clarity, not sending it to three anonymous reviewers.
+
+### Step 5: Publication
+
+Once accepted:
+
+1. We merge any final changes
+2. We create a **GitHub Release** (e.g., `v1.0`)
+3. **Zenodo automatically archives it and mints a DOI**
+4. Your paper appears on the main site
+
+## What We Need From You
+
+### Show Your Work
+
+Include your code or describe your methods. This doesn't mean it has to run on a reviewer's laptop — if you needed an HPC cluster with H100s and 30 hours of compute time, just tell us that. The point is transparency.
 
 ### Data
 
-- **Small data** (< 10 MB): Include it in your submission
+- **Small data** (< 10MB): Include it in the `data/` folder
 - **Large data**: Host on Zenodo, Hugging Face, or another repository with a DOI. Link to it in your paper.
 - **Sensitive data**: Describe what you used and how others might access similar sources
 
-### Computational Scale
+### Honest Compute Requirements
 
 We welcome work at any scale:
 
-- **Laptop-scale**: Runs anywhere, great for teaching
-- **Server-scale**: Needs a decent GPU, takes hours
+- **Laptop-scale**: Runs anywhere
+- **Server-scale**: Needs a GPU, takes hours
 - **Cluster-scale**: Needs HPC, takes days
 
-Just be honest about what you used. If readers need an H100 and a week of compute to reproduce your work, say so clearly.
-
-## How to Submit
-
-### Option 1: Email (Easiest)
-
-Send your notebook and any small data files to: *[TBD]*
-
-We'll handle the conversion and GitHub setup.
-
-### Option 2: Pull Request (For Git Users)
-
-1. Fork this repository
-2. Create a new folder: `papers/NNN-your-short-title/`
-3. Add your files following the [template structure](#paper-structure)
-4. Submit a Pull Request
-
-## Paper Structure {#paper-structure}
-
-```
-papers/NNN-short-title/
-├── index.qmd          # The main paper (required)
-├── _metadata.yml      # Paper metadata (required)
-├── data/              # Small datasets (< 10MB total)
-├── figures/           # Generated figures (optional)
-├── scripts/           # Helper scripts (optional)
-└── README.md          # Brief description
-```
-
-### Required Metadata (`_metadata.yml`)
-
-```yaml
-title: "Your Paper Title"
-author:
-  - name: "Author Name"
-    affiliation: "Institution"
-    orcid: "0000-0000-0000-0000"
-date: "2025-01-15"
-version: "1.0"
-keywords:
-  - keyword1
-  - keyword2
-abstract: |
-  A brief abstract describing the paper's contribution.
-```
-
-## Review Process
-
-1. **Initial Check** (1 week): Editors verify the submission is complete and in scope
-2. **Technical Review** (1-2 weeks): Does the code run? Is it documented?
-3. **Editorial Review** (1-2 weeks): Does the argument hold? Is it "critical"?
-4. **Publication**: Merge to main, website updates immediately
-
-### Badges
-
-- **Reproducible** — Code runs without errors on a clean environment
-- **Reviewed** — Passed editorial gatekeeping
+Just be clear about what you used.
 
 ## After Publication
 
-### Updates Welcome
+### Updates
 
-You can update your paper at any time via Pull Request. Minor updates (typos, dependency fixes) increment the patch version (v1.0 → v1.0.1). Major revisions increment the minor version (v1.0 → v1.1).
+Your paper is a living document. Submit a pull request to update it anytime. Minor fixes (typos, broken links) get merged quickly. Major revisions may warrant a new version number.
 
-### Zenodo Archiving
+### New Versions
 
-When you're ready to "freeze" a version for citation, we create a GitHub Release. Zenodo automatically archives it and mints a DOI.
+When you want to create a citable new version:
 
-### arXiv Submission (Optional)
+1. Submit updates via PR
+2. We create a new release (`v1.1`, `v2.0`, etc.)
+3. Zenodo mints a new DOI for that version
 
-If your paper has strong technical contributions, we can help submit a PDF snapshot to arXiv (categories: cs.CL, cs.CY, cs.DL).
+Previous versions remain citable at their original DOIs.
 
-### Hugging Face (Optional)
+### arXiv (Optional)
 
-If your paper produces a reusable dataset or model, we can help create a Hugging Face card.
+If your paper has strong technical contributions, we can help submit a PDF snapshot to arXiv.
+
+## Not a Git User?
+
+Email us your materials and we'll handle the technical setup:
+
+- Your notebook (`.qmd`, `.ipynb`, `.Rmd`, or even Word + code files)
+- Any small data files
+- Author info (name, affiliation, ORCID if you have one)
+
+Contact: *[TBD]*
 
 ## Questions?
 
