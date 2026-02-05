@@ -3,6 +3,11 @@ title: "Working Papers in Critical Search"
 subtitle: "A home for history that shows its work"
 ---
 
+::: {.callout-warning}
+## Work in Progress
+This site is under active development. We're testing the infrastructure and refining our processes. Expect changes.
+:::
+
 ## What We Publish
 
 **Working Papers in Critical Search** is a flexible venue for computational history. We publish:

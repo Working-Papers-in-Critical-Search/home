@@ -2,6 +2,11 @@
 title: "About"
 ---
 
+::: {.callout-warning}
+## Work in Progress
+This site is under active development. We're testing the infrastructure and refining our processes.
+:::
+
 ## Mission
 
 **Working Papers in Critical Search** is a flexible venue for historians doing computational work. We publish things that don't fit neatly into traditional journals:
@@ -51,8 +56,6 @@ We use editorial review rather than formal peer review:
 - **Speed**: Papers can be published within weeks, not months
 - **Quality**: Editors verify the argument and check that code runs
 - **Iteration**: Substantial revisions happen post-publication, in the open
-
-Papers that pass editorial review and have verified reproducible code receive a **Reproducible** badge.
 
 ## Infrastructure
 

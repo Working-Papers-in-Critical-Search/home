@@ -2,6 +2,11 @@
 title: "Submit Your Work"
 ---
 
+::: {.callout-warning}
+## Work in Progress
+This site is under active development. The submission process described below is being tested.
+:::
+
 ## What We're Looking For
 
 We're a flexible venue. You might submit:
