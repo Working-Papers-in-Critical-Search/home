@@ -1,0 +1,128 @@
+---
+title: "Submit Your Work"
+---
+
+## What We're Looking For
+
+We're a flexible venue. You might submit:
+
+- **A draft paper** — Something you're developing for a traditional journal. Get feedback, establish priority, iterate in public.
+- **A dataset paper** — You built a historical dataset. Document it, share it, get credit for it.
+- **A method note** — You figured out how to do something useful. Write it up so others can learn.
+- **A short piece** — An observation, a benchmark, a comparison. Too small for a journal but worth sharing.
+
+Topics include but are not limited to:
+
+- NLP analysis of historical corpora
+- Machine learning for historical document processing
+- OCR pipelines and document digitization
+- Database design for historical research
+- Critical analysis of search and retrieval methods
+- Benchmarking AI tools on historical sources
+
+## What We Need
+
+### Code That Shows Your Work
+
+Every submission should include the code you used. This doesn't mean it has to run on a reviewer's laptop - if you needed an HPC cluster with H100s and 30 hours of compute time, just tell us that. The point is transparency about methods, not enforcing that everything be instantly reproducible.
+
+### Supported Formats
+
+- **Quarto** (`.qmd`) — Preferred
+- **Jupyter Notebook** (`.ipynb`) — We'll convert to Quarto
+- **R Markdown** (`.Rmd`) — We'll convert to Quarto
+- **Scripts + writeup** — We can work with this too
+
+### Data
+
+- **Small data** (< 10 MB): Include it in your submission
+- **Large data**: Host on Zenodo, Hugging Face, or another repository with a DOI. Link to it in your paper.
+- **Sensitive data**: Describe what you used and how others might access similar sources
+
+### Computational Scale
+
+We welcome work at any scale:
+
+- **Laptop-scale**: Runs anywhere, great for teaching
+- **Server-scale**: Needs a decent GPU, takes hours
+- **Cluster-scale**: Needs HPC, takes days
+
+Just be honest about what you used. If readers need an H100 and a week of compute to reproduce your work, say so clearly.
+
+## How to Submit
+
+### Option 1: Email (Easiest)
+
+Send your notebook and any small data files to: *[TBD]*
+
+We'll handle the conversion and GitHub setup.
+
+### Option 2: Pull Request (For Git Users)
+
+1. Fork this repository
+2. Create a new folder: `papers/NNN-your-short-title/`
+3. Add your files following the [template structure](#paper-structure)
+4. Submit a Pull Request
+
+## Paper Structure {#paper-structure}
+
+```
+papers/NNN-short-title/
+├── index.qmd          # The main paper (required)
+├── _metadata.yml      # Paper metadata (required)
+├── data/              # Small datasets (< 10MB total)
+├── figures/           # Generated figures (optional)
+├── scripts/           # Helper scripts (optional)
+└── README.md          # Brief description
+```
+
+### Required Metadata (`_metadata.yml`)
+
+```yaml
+title: "Your Paper Title"
+author:
+  - name: "Author Name"
+    affiliation: "Institution"
+    orcid: "0000-0000-0000-0000"
+date: "2025-01-15"
+version: "1.0"
+keywords:
+  - keyword1
+  - keyword2
+abstract: |
+  A brief abstract describing the paper's contribution.
+```
+
+## Review Process
+
+1. **Initial Check** (1 week): Editors verify the submission is complete and in scope
+2. **Technical Review** (1-2 weeks): Does the code run? Is it documented?
+3. **Editorial Review** (1-2 weeks): Does the argument hold? Is it "critical"?
+4. **Publication**: Merge to main, website updates immediately
+
+### Badges
+
+- **Reproducible** — Code runs without errors on a clean environment
+- **Reviewed** — Passed editorial gatekeeping
+
+## After Publication
+
+### Updates Welcome
+
+You can update your paper at any time via Pull Request. Minor updates (typos, dependency fixes) increment the patch version (v1.0 → v1.0.1). Major revisions increment the minor version (v1.0 → v1.1).
+
+### Zenodo Archiving
+
+When you're ready to "freeze" a version for citation, we create a GitHub Release. Zenodo automatically archives it and mints a DOI.
+
+### arXiv Submission (Optional)
+
+If your paper has strong technical contributions, we can help submit a PDF snapshot to arXiv (categories: cs.CL, cs.CY, cs.DL).
+
+### Hugging Face (Optional)
+
+If your paper produces a reusable dataset or model, we can help create a Hugging Face card.
+
+## Questions?
+
+Open an [issue](https://github.com/Working-Papers-in-Critical-Search/home/issues) or email the editors.

@@ -1,0 +1,71 @@
+---
+title: "About"
+---
+
+## Mission
+
+**Working Papers in Critical Search** is a flexible venue for historians doing computational work. We publish things that don't fit neatly into traditional journals:
+
+- Draft papers you're developing for eventual journal submission
+- Dataset papers documenting collections you've built
+- Method notes on pipelines, tools, or techniques
+- Short pieces that are too small for a journal but too important to lose
+
+We believe that historical methodology should be transparent and open to revision. Show your work.
+
+## What is "Critical Search"?
+
+Critical search examines how we find, filter, and interpret historical evidence using computational tools. This includes:
+
+- **Natural Language Processing** applied to historical corpora
+- **Machine learning** for document classification, OCR correction, or entity extraction
+- **Database design** and querying strategies for historical data
+- **Information retrieval** experiments on digitized archives
+- **Critical analysis** of search algorithms and their biases
+
+## Editorial Philosophy
+
+### Living Documents
+
+Papers published here are not frozen. Authors may update their work as:
+
+- Code libraries release new versions
+- New data sources become available
+- Readers identify errors or suggest improvements
+
+Each significant update receives a new version number (v1.1, v1.2, etc.) and a new Zenodo DOI.
+
+### Show Your Work
+
+We ask that you include your code and describe your methods. This doesn't mean everything needs to be instantly reproducible on a laptop - if your analysis required an HPC cluster and weeks of compute, just say so. The point is transparency, not perfection.
+
+### Editorial Gatekeeping (Not Peer Review)
+
+We use editorial review rather than formal peer review:
+
+- **Speed**: Papers can be published within weeks, not months
+- **Quality**: Editors verify the argument and check that code runs
+- **Iteration**: Substantial revisions happen post-publication, in the open
+
+Papers that pass editorial review and have verified reproducible code receive a **Reproducible** badge.
+
+## Infrastructure
+
+| Component | Purpose |
+|-----------|---------|
+| **GitHub** | Version control, collaboration, living documents |
+| **Quarto** | Renders notebooks to HTML and PDF |
+| **GitHub Pages** | Free hosting |
+| **Zenodo** | Permanent archiving, DOI minting |
+| **Giscus** | Comments via GitHub Discussions |
+| **arXiv** | Distribution to CS/AI communities (optional) |
+| **Hugging Face** | Dataset/model hosting (when applicable) |
+
+## License
+
+All content is published under [CC-BY 4.0](LICENSE.md). Code is typically MIT-licensed unless otherwise specified by authors.
+
+## Contact
+
+- GitHub Issues: [Report a problem](https://github.com/Working-Papers-in-Critical-Search/home/issues)
+- Email: *[TBD]*

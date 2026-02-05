@@ -1,0 +1,65 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Working Papers in Critical Search"
+  description: "A home for history that shows its work"
+  site-url: https://working-papers-in-critical-search.github.io/home/
+  repo-url: https://github.com/Working-Papers-in-Critical-Search/home
+  repo-actions: [edit, issue]
+
+  navbar:
+    background: dark
+    left:
+      - href: index.qmd
+        text: Home
+      - href: papers.qmd
+        text: Papers
+      - href: about.qmd
+        text: About
+      - href: submit.qmd
+        text: Submit
+    right:
+      - icon: github
+        href: https://github.com/Working-Papers-in-Critical-Search/home
+
+  sidebar:
+    - title: "Papers"
+      style: docked
+      contents:
+        - section: "2025"
+          contents:
+            - papers/index.qmd
+
+  page-footer:
+    left: |
+      Working Papers in Critical Search<br>
+      Editors: Jo Guldi (Emory) & Jim Clifford (USask)
+    center: |
+      [![](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+    right: |
+      Licensed under [CC-BY 4.0](LICENSE.md)
+
+  comments:
+    giscus:
+      repo: Working-Papers-in-Critical-Search/home
+      category: "Comments"
+      mapping: pathname
+      reactions-enabled: true
+      loading: lazy
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true
+    code-link: true
+    highlight-style: github
+
+execute:
+  freeze: auto

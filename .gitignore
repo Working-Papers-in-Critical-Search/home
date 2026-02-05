@@ -1,0 +1,60 @@
+# Quarto
+/_site/
+/.quarto/
+*_files/
+*.html
+!index.html
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+.venv/
+*.egg-info/
+.eggs/
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (large files should be on Zenodo)
+*.csv.gz
+*.parquet
+*.h5
+*.hdf5
+
+# Credentials (never commit these)
+.env
+*.pem
+*.key
+credentials.json
+
+# Build artifacts
+*.pdf
+!papers/**/figures/*.pdf
+
+# Temporary
+*.tmp
+*.temp
+*.log

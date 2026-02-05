@@ -1,0 +1,21 @@
+---
+title: "Papers Archive"
+---
+
+Papers are organized by year of initial publication. Each paper may have multiple versions as authors update their work.
+
+## 2025
+
+*First papers coming soon.*
+
+---
+
+## How Papers Are Numbered
+
+Papers are numbered sequentially: 001, 002, 003, etc. The number never changes, even if the paper is updated.
+
+Version numbers (v1.0, v1.1, v2.0) track revisions:
+
+- **Patch** (v1.0.1): Typo fixes, dependency updates
+- **Minor** (v1.1): New analysis, additional data, improved visualizations
+- **Major** (v2.0): Substantial rewrite, new conclusions

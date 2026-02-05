@@ -1,0 +1,51 @@
+---
+title: "Working Papers in Critical Search"
+subtitle: "A home for history that shows its work"
+---
+
+## What We Publish
+
+**Working Papers in Critical Search** is a flexible venue for computational history. We publish:
+
+- **Draft papers** on their way to traditional journals
+- **Dataset papers** documenting historical data you've created
+- **Method notes** on tools, pipelines, or techniques
+- **Short pieces** that don't fit traditional formats
+
+The common thread: **showing your work**. Include your code, describe your methods, and be transparent about what you did.
+
+We focus on **critical search**: the intersection of historical inquiry and computational methods, including NLP, machine learning, database querying, and information retrieval applied to historical sources.
+
+## Why Here?
+
+Traditional venues have constraints: word limits, format requirements, long timelines. We offer:
+
+1. **Flexibility** — Full papers, dataset notes, method sketches, whatever fits your work
+2. **Speed** — Publish in weeks, not months
+3. **Transparency** — Show your code, describe your methods honestly
+4. **Iteration** — Update your work as it develops; freeze versions for citation when ready
+
+## Latest Papers
+
+*Coming soon: Paper 001 and Paper 002*
+
+## How to Cite
+
+Each paper has a permanent DOI via Zenodo. Cite the specific version you used:
+
+```
+Author (Year). "Title." Working Papers in Critical Search, Paper NNN, vX.X.
+DOI: 10.5281/zenodo.XXXXXXX
+```
+
+## Editors
+
+- **Jo Guldi** (Emory University)
+- **Jim Clifford** (University of Saskatchewan)
+
+---
+
+::: {.callout-note}
+## Submit Your Work
+We welcome submissions from historians using computational methods. See our [submission guidelines](submit.qmd).
+:::

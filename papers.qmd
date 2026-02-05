@@ -1,0 +1,18 @@
+---
+title: "Papers"
+listing:
+  contents: papers/*/index.qmd
+  type: table
+  fields: [title, author, date]
+  sort: "date desc"
+  categories: true
+---
+
+## All Papers
+
+Browse all published working papers below. Each paper includes executable code and is available in HTML and PDF formats.
+
+::: {.callout-tip}
+## Citing Papers
+Each paper has a DOI. Click through to the paper page to find the recommended citation format.
+:::
