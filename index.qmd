@@ -16,6 +16,8 @@ The common thread: **showing your work**. Include your code, describe your metho
 
 We focus on **critical search**: the intersection of historical inquiry and computational methods—NLP, machine learning, LLMs, database design, and information retrieval applied to historical sources.
 
+New methods are emerging rapidly: multimodal LLMs that read handwritten documents, vision models that extract structure from historical maps, embedding models that find semantic connections across millions of pages. We want a place to document what works, what doesn't, and what historians should know about these tools.
+
 ## Why Here?
 
 Traditional venues have constraints: word limits, format requirements, long timelines. We offer:
