@@ -19,9 +19,12 @@ Critical search examines how we find, filter, and interpret historical evidence 
 
 - **Natural Language Processing** applied to historical corpora
 - **Machine learning** for document classification, OCR correction, or entity extraction
+- **Large language models** for transcription, summarization, and information extraction from historical sources
 - **Database design** and querying strategies for historical data
 - **Information retrieval** experiments on digitized archives
-- **Critical analysis** of search algorithms and their biases
+- **Critical analysis** of search algorithms, AI systems, and their biases
+
+New methods are emerging rapidly—multimodal LLMs that can read handwritten documents, vision models that extract structure from historical maps, embedding models that find semantic connections across millions of pages. We want a place to document what works, what doesn't, and what historians should know about these tools.
 
 ## Editorial Philosophy
 

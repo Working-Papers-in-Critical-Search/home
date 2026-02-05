@@ -14,7 +14,7 @@ subtitle: "A home for history that shows its work"
 
 The common thread: **showing your work**. Include your code, describe your methods, and be transparent about what you did.
 
-We focus on **critical search**: the intersection of historical inquiry and computational methods, including NLP, machine learning, database querying, and information retrieval applied to historical sources.
+We focus on **critical search**: the intersection of historical inquiry and computational methods—NLP, machine learning, LLMs, database design, and information retrieval applied to historical sources.
 
 ## Why Here?
 
