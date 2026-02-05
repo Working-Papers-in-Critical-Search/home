@@ -29,7 +29,7 @@ Traditional venues have constraints: word limits, format requirements, long time
 
 ## Latest Papers
 
-*Coming soon: Paper 001 and Paper 002*
+- **Paper 000:** [Building Working Papers in Critical Search](https://working-papers-in-critical-search.github.io/paper-000-building-wpcs/) — A self-documenting paper about this infrastructure
 
 ## How to Cite
 
