@@ -44,10 +44,13 @@ website:
   comments:
     giscus:
       repo: Working-Papers-in-Critical-Search/home
+      repo-id: ""
       category: "Comments"
-      mapping: pathname
+      category-id: ""
+      mapping: url
       reactions-enabled: true
       loading: lazy
+      input-position: top
 
 format:
   html:
