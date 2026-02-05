@@ -14,7 +14,7 @@ subtitle: "A home for history that shows its work"
 
 The common thread: **showing your work**. Include your code, describe your methods, and be transparent about what you did.
 
-We focus on **critical search**: the intersection of historical inquiry and computational methods—NLP, machine learning, LLMs, geospatial analysis, database design, and information retrieval applied to historical sources.
+We focus on **critical search**: the intersection of historical inquiry and computational methods—NLP, machine learning, LLMs, geospatial analysis, linked data, knowledge graphs, and information retrieval applied to historical sources.
 
 New methods are emerging rapidly: multimodal LLMs that read handwritten documents, vision models that extract structure from historical maps, georeferencing pipelines that place sources in space, embedding models that find semantic connections across millions of pages. We want a place to document what works, what doesn't, and what historians should know about these tools.
 

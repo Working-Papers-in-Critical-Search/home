@@ -21,6 +21,7 @@ Critical search examines how we find, filter, and interpret historical evidence 
 - **Machine learning** for document classification, OCR correction, or entity extraction
 - **Large language models** for transcription, summarization, and information extraction from historical sources
 - **Geospatial methods** including historical GIS, georeferencing, and spatial analysis
+- **Linked open data** and interoperable knowledge graphs
 - **Database design** and querying strategies for historical data
 - **Information retrieval** experiments on digitized archives
 - **Critical analysis** of search algorithms, AI systems, and their biases
