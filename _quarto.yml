@@ -35,7 +35,7 @@ website:
   page-footer:
     left: |
       Working Papers in Critical Search<br>
-      Editors: Jo Guldi (Emory) & Jim Clifford (USask)
+      Editors: [Jo Guldi](https://www.joguldi.com/) & [Jim Clifford](https://jburnford.github.io/)
     center: |
       [![](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
     right: |

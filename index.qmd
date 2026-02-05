@@ -42,8 +42,8 @@ DOI: 10.5281/zenodo.XXXXXXX
 
 ## Editors
 
-- **Jo Guldi** (Emory University)
-- **Jim Clifford** (University of Saskatchewan)
+- **[Jo Guldi](https://www.joguldi.com/)** (Emory University)
+- **[Jim Clifford](https://jburnford.github.io/)** (University of Saskatchewan)
 
 ---
 
