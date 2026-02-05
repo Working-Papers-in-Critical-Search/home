@@ -16,6 +16,7 @@ Topics include but are not limited to:
 - NLP analysis of historical corpora
 - Machine learning for historical document processing
 - OCR pipelines and document digitization
+- Historical GIS, georeferencing, and spatial analysis
 - Database design for historical research
 - Critical analysis of search and retrieval methods
 - Benchmarking AI tools on historical sources
