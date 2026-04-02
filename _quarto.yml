@@ -28,9 +28,7 @@ website:
     - title: "Papers"
       style: docked
       contents:
-        - section: "2025"
-          contents:
-            - papers/index.qmd
+        - papers/index.qmd
 
   page-footer:
     left: |
@@ -63,6 +61,8 @@ format:
     code-tools: true
     code-link: true
     highlight-style: github
+    include-after-body:
+      text: '<script src="https://hypothes.is/embed.js" async></script>'
 
 execute:
   freeze: auto

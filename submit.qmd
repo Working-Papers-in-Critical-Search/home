@@ -2,11 +2,6 @@
 title: "Submit Your Work"
 ---
 
-::: {.callout-warning}
-## Work in Progress
-This site is under active development. The submission process described below is being tested.
-:::
-
 ## What We're Looking For
 
 We're a flexible venue. You might submit:
@@ -129,7 +124,7 @@ Email us your materials and we'll handle the technical setup:
 - Any small data files
 - Author info (name, affiliation, ORCID if you have one)
 
-Contact: *[TBD]*
+Contact: [jim.clifford@usask.ca](mailto:jim.clifford@usask.ca) or [jo.guldi@emory.edu](mailto:jo.guldi@emory.edu)
 
 ## Questions?
 

@@ -4,14 +4,6 @@ title: "Papers"
 
 Each paper lives in its own repository with its own DOI.
 
-## 2025
-
-**Paper 000:** [Building Working Papers in Critical Search](https://working-papers-in-critical-search.github.io/paper-000-building-wpcs/)
-*Claude Code, Jim Clifford, Jo Guldi*
-A self-documenting paper about this infrastructure. [[repo](https://github.com/Working-Papers-in-Critical-Search/paper-000-building-wpcs)]
-
----
-
 ## How It Works
 
 Each paper is a separate GitHub repository under our organization. When a paper is ready, we tag a release and Zenodo automatically mints a DOI.
