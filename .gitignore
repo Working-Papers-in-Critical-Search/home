@@ -4,6 +4,7 @@
 *_files/
 *.html
 !index.html
+!_includes/*.html
 
 # Python
 __pycache__/

@@ -1,0 +1,377 @@
+/*-- scss:rules --*/
+
+// ============================================================
+// Working Papers in Critical Search — base, chrome, utilities.
+// Consumes tokens from _tokens.scss.
+// ============================================================
+
+// ---------------- Base ----------------
+
+html {
+  scroll-behavior: smooth;
+  font-size: $fs-body;
+}
+
+html, body {
+  margin: 0;
+  background: $paper;
+  color: $ink;
+  font-family: $serif;
+  font-size: $fs-body;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "kern", "liga", "onum";
+}
+
+::selection { background: $ink; color: $paper; }
+
+a {
+  color: $ink;
+  text-decoration: none;
+  border-bottom: 1px solid $rule-strong;
+  transition: border-color 120ms $ease, color 120ms $ease;
+
+  &:hover {
+    color: $accent;
+    border-bottom-color: $accent;
+  }
+}
+
+// Buttons: inherit by default; Quarto buttons we restyle per context.
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid $accent;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+// Kill Quarto/Bootstrap residue we don't want: default navbar/footer wrappers.
+// We render our own via include-before-body / include-after-body.
+.navbar,
+body > .nav-footer,
+body > footer.footer,
+#quarto-header,
+#quarto-footer,
+.quarto-title-banner {
+  display: none !important;
+}
+
+// Quarto wraps content in #quarto-content > main.content — reset its constraints
+// so our full-bleed sections (like the paper-2 Latest Papers band) work.
+main.content,
+#quarto-content,
+.page-columns,
+.page-layout-article {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  grid-template-columns: none !important;
+  display: block !important;
+}
+
+// ---------------- Utilities ----------------
+
+.wpcs-mono      { font-family: $mono; font-feature-settings: "kern", "liga", "calt"; }
+.wpcs-micro     { font-family: $mono; font-size: $fs-micro; letter-spacing: 0.08em; text-transform: uppercase; color: $ink-mute; }
+.wpcs-small-mono{ font-family: $mono; font-size: $fs-mono; color: $ink-mute; }
+
+.wpcs-rule        { height: 1px; background: $rule; border: 0; margin: 0; }
+.wpcs-rule-strong { height: 1px; background: $ink; border: 0; margin: 0; opacity: 0.85; }
+
+.wpcs-tag {
+  font-family: $mono;
+  font-size: 11px;
+  color: $ink-mute;
+  letter-spacing: 0.02em;
+  padding: 2px 0;
+  border: 0;
+
+  &::before { content: "["; color: $ink-faint; margin-right: 1px; }
+  &::after  { content: "]"; color: $ink-faint; margin-left: 1px; }
+
+  &[data-active="true"] { color: $accent; }
+}
+
+.wpcs-kbd {
+  font-family: $mono;
+  font-size: 11px;
+  padding: 1px 5px;
+  border: 1px solid $rule-strong;
+  border-radius: 3px;
+  color: $ink-mute;
+  background: $paper-2;
+}
+
+// ---------------- Container & grid ----------------
+
+.wpcs-wrap {
+  max-width: $wrap-max;
+  margin: 0 auto;
+  padding: 0 $wrap-pad;
+}
+
+.wpcs-row {
+  display: grid;
+  grid-template-columns: #{$rail-w} 1fr;
+  gap: $col-gutter;
+}
+
+.wpcs-row--with-meta {
+  grid-template-columns: #{$rail-w} 1fr auto;
+}
+
+// ---------------- Topbar ----------------
+
+.wpcs-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(244, 244, 242, 0.92);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-bottom: 1px solid $rule;
+}
+
+.wpcs-topbar__inner {
+  max-width: $wrap-max;
+  margin: 0 auto;
+  padding: 14px $wrap-pad;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 48px;
+}
+
+.wpcs-wordmark {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  border: 0;
+  color: $ink;
+
+  &:hover { color: $ink; border: 0; }
+
+  .wpcs-wordmark__numero {
+    font-family: $mono;
+    font-size: 13px;
+    color: $ink-mute;
+    letter-spacing: 0.04em;
+  }
+
+  .wpcs-wordmark__title {
+    font-family: $serif;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+
+    em {
+      font-style: italic;
+      font-weight: 400;
+      color: $ink-2;
+    }
+  }
+}
+
+.wpcs-nav {
+  display: flex;
+  gap: 28px;
+  justify-self: center;
+  font-family: $mono;
+  font-size: 13px;
+
+  a {
+    border: 0;
+    color: $ink-mute;
+    position: relative;
+    padding: 4px 0;
+    transition: color 120ms $ease;
+
+    &::before {
+      content: attr(data-idx) " ";
+      color: $ink-faint;
+      margin-right: 6px;
+    }
+
+    &:hover { color: $ink; }
+
+    &.is-active {
+      color: $ink;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -15px;
+        height: 1px;
+        background: $ink;
+      }
+    }
+  }
+}
+
+.wpcs-topbar__meta {
+  font-family: $mono;
+  font-size: 11.5px;
+  color: $ink-faint;
+  letter-spacing: 0.04em;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+// ---------------- Footer ----------------
+
+.wpcs-foot {
+  border-top: 1px solid $rule;
+  margin-top: 120px;
+  padding: 48px 0 64px;
+  font-family: $mono;
+  font-size: 12px;
+  color: $ink-mute;
+  background: $paper;
+}
+
+.wpcs-foot__inner {
+  max-width: $wrap-max;
+  margin: 0 auto;
+  padding: 0 $wrap-pad;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+}
+
+.wpcs-foot h4 {
+  font-family: $mono;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $ink-faint;
+  margin: 0 0 12px;
+  font-weight: 500;
+}
+
+.wpcs-foot a {
+  color: $ink-mute;
+  border: 0;
+
+  &:hover { color: $ink; }
+}
+
+.wpcs-foot ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wpcs-foot__coda {
+  max-width: $wrap-max;
+  margin: 40px auto 0;
+  padding: 24px $wrap-pad 0;
+  border-top: 1px solid $rule;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: $ink-faint;
+  letter-spacing: 0.04em;
+}
+
+// ---------------- Typography primitives used across pages ----------------
+
+.wpcs-hero-h1 {
+  margin: 0;
+  font-family: $serif;
+  font-size: $fs-display;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  font-weight: 600;
+  max-width: 900px;
+
+  em {
+    font-style: italic;
+    font-weight: 400;
+    color: $accent;
+  }
+}
+
+.wpcs-page-h1 {
+  margin: 0;
+  font-family: $serif;
+  font-size: $fs-h1;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.wpcs-lead {
+  font-family: $serif;
+  font-size: $fs-lead;
+  line-height: 1.55;
+  color: $ink-2;
+  max-width: 680px;
+  text-wrap: pretty;
+}
+
+// ---------------- Section head (№ NN · Title) ----------------
+
+.wpcs-section-head {
+  display: grid;
+  grid-template-columns: #{$rail-w} 1fr auto;
+  align-items: baseline;
+  gap: $col-gutter;
+  margin-bottom: 32px;
+
+  h2 {
+    margin: 0;
+    font-family: $serif;
+    font-size: $fs-h2;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .wpcs-section-head__trailing {
+    font-family: $mono;
+    font-size: $fs-mono;
+    color: $ink-mute;
+  }
+}
+
+// ---------------- Responsive collapse (single breakpoint) ----------------
+
+@media (max-width: 768px) {
+  .wpcs-row,
+  .wpcs-row--with-meta,
+  .wpcs-section-head {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .wpcs-topbar__inner {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px 20px;
+  }
+
+  .wpcs-nav { justify-self: start; flex-wrap: wrap; gap: 16px; }
+  .wpcs-topbar__meta { display: none; }
+
+  .wpcs-wrap { padding: 0 20px; }
+
+  .wpcs-foot__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .wpcs-hero-h1 { font-size: 40px; }
+  .wpcs-page-h1 { font-size: 32px; }
+}

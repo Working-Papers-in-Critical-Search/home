@@ -7,62 +7,27 @@ website:
   description: "A home for history that shows its work"
   site-url: https://working-papers-in-critical-search.github.io/home/
   repo-url: https://github.com/Working-Papers-in-Critical-Search/home
-  repo-actions: [edit, issue]
 
-  navbar:
-    background: dark
-    left:
-      - href: index.qmd
-        text: Home
-      - href: papers.qmd
-        text: Papers
-      - href: about.qmd
-        text: About
-      - href: submit.qmd
-        text: Submit
-    right:
-      - icon: github
-        href: https://github.com/Working-Papers-in-Critical-Search/home
-
-  sidebar:
-    - title: "Papers"
-      style: docked
-      contents:
-        - papers/index.qmd
-
-  page-footer:
-    left: |
-      Working Papers in Critical Search<br>
-      Editors: [Jo Guldi](https://www.joguldi.com/) & [Jim Clifford](https://jburnford.github.io/)
-    center: |
-      [![](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
-    right: |
-      Licensed under [CC-BY 4.0](LICENSE.md)
-
-  comments:
-    giscus:
-      repo: Working-Papers-in-Critical-Search/home
-      repo-id: ""
-      category: "Comments"
-      category-id: ""
-      mapping: url
-      reactions-enabled: true
-      loading: lazy
-      input-position: top
+  # No navbar / page-footer — we inject custom chrome via includes.
+  # No giscus — removed per design.
+  # Hypothes.is is scoped to paper detail pages via per-page front-matter.
 
 format:
   html:
     theme:
-      light: flatly
-      dark: darkly
-    toc: true
-    toc-depth: 3
-    code-fold: true
-    code-tools: true
-    code-link: true
-    highlight-style: github
+      - cosmo
+      - _tokens.scss
+      - _custom.scss
+    toc: false
+    anchor-sections: false
+    smooth-scroll: true
+    link-external-newwindow: true
+    include-in-header:
+      - _includes/fonts.html
+    include-before-body:
+      - _includes/topbar.html
     include-after-body:
-      text: '<script src="https://hypothes.is/embed.js" async></script>'
+      - _includes/footer.html
 
 execute:
   freeze: auto
