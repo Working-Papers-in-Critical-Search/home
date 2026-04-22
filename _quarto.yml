@@ -20,6 +20,7 @@ format:
       - _custom.scss
     toc: false
     anchor-sections: false
+    title-block-style: none
     smooth-scroll: true
     link-external-newwindow: true
     include-in-header:

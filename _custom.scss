@@ -52,14 +52,20 @@ button {
   border-radius: 2px;
 }
 
-// Kill Quarto/Bootstrap residue we don't want: default navbar/footer wrappers.
-// We render our own via include-before-body / include-after-body.
+// Kill Quarto/Bootstrap residue we don't want: default navbar/footer wrappers,
+// auto-generated title block (our masthead replaces it), sidebar, TOC.
+// We render our own chrome via include-before-body / include-after-body.
 .navbar,
 body > .nav-footer,
 body > footer.footer,
 #quarto-header,
 #quarto-footer,
-.quarto-title-banner {
+#title-block-header,
+#quarto-sidebar,
+#TOC,
+.sidebar,
+.quarto-title-banner,
+.quarto-title-block {
   display: none !important;
 }
 
@@ -346,14 +352,220 @@ main.content,
   }
 }
 
+// ---------------- Home page ----------------
+
+.wpcs-home {
+  // Each section handles its own vertical padding so we can alternate
+  // wrap-constrained and full-bleed band sections cleanly.
+}
+
+.wpcs-section {
+  padding: 80px $wrap-pad;
+}
+
+.wpcs-section--flush {
+  padding: 60px $wrap-pad 40px;
+}
+
+.wpcs-band {
+  background: $paper-2;
+  padding: 80px 0;
+  border-top: 1px solid $rule;
+  border-bottom: 1px solid $rule;
+}
+
+// Masthead
+.wpcs-masthead {
+  padding: 64px $wrap-pad 48px;
+  border-bottom: 1px solid $rule;
+}
+
+.wpcs-masthead__grid {
+  display: grid;
+  grid-template-columns: #{$rail-w} 1fr auto;
+  gap: $col-gutter;
+  align-items: end;
+}
+
+.wpcs-masthead__ctas {
+  margin-top: 36px;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.wpcs-masthead__vlabel {
+  font-family: $mono;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: $ink-faint;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: right;
+}
+
+.wpcs-lead + .wpcs-masthead__ctas { margin-top: 36px; }
+
+// Explicit lead spacing after hero
+.wpcs-hero-h1 + .wpcs-lead { margin-top: 72px; }
+
+// Mono CTA links
+.wpcs-cta {
+  font-size: 13px;
+  color: $ink-mute;
+  border-bottom: 1px solid $rule-strong;
+  padding-bottom: 2px;
+
+  &:hover { color: $accent; border-bottom-color: $accent; }
+}
+
+.wpcs-cta--primary {
+  color: $ink;
+  border-bottom-color: $ink;
+}
+
+// § 01 Formats grid
+.wpcs-formats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 48px;
+  max-width: 900px;
+}
+
+.wpcs-format-card {
+  border-top: 1px solid $ink;
+  padding-top: 16px;
+
+  .wpcs-format-card__idx { margin-bottom: 8px; }
+
+  h3 {
+    margin: 0 0 10px;
+    font-family: $serif;
+    font-size: $fs-h3;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    margin: 0;
+    color: $ink-2;
+    font-size: 15.5px;
+    line-height: 1.55;
+  }
+}
+
+// § 02 Empty state
+.wpcs-empty {
+  padding-top: 8px;
+}
+
+// § 03 Cite block
+.wpcs-cite-block {
+  margin: 0;
+  font-family: $mono;
+  font-size: 13.5px;
+  background: $paper-2;
+  padding: 20px 24px;
+  border-left: 2px solid $ink;
+  color: $ink-2;
+  line-height: 1.7;
+  overflow-x: auto;
+  max-width: 760px;
+  white-space: pre;
+}
+
+.wpcs-cite-note {
+  margin-top: 20px;
+  color: $ink-mute;
+  font-size: 14.5px;
+  max-width: 680px;
+}
+
+// § 04 Editors
+.wpcs-editors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  max-width: 900px;
+}
+
+.wpcs-editor {
+  border-top: 1px solid $ink;
+  padding-top: 20px;
+
+  .wpcs-micro { margin-bottom: 10px; }
+
+  h3 {
+    margin: 0 0 4px;
+    font-family: $serif;
+    font-size: $fs-h3;
+    font-weight: 600;
+
+    a { border-bottom: 1px solid $rule-strong; }
+  }
+
+  .wpcs-small-mono { margin-bottom: 12px; }
+
+  p {
+    margin: 0;
+    color: $ink-2;
+    font-size: 15.5px;
+    line-height: 1.55;
+  }
+}
+
+.wpcs-editor__tags {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+// Submit CTA row
+.wpcs-submit-cta {
+  border-top: 1px solid $ink;
+  border-bottom: 1px solid $ink;
+  padding: 48px 0;
+  display: grid;
+  grid-template-columns: #{$rail-w} 1fr auto;
+  gap: $col-gutter;
+  align-items: center;
+
+  h3 {
+    margin: 0;
+    font-family: $serif;
+    font-size: $fs-h2;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+}
+
+.wpcs-submit-cta__btn {
+  font-size: 13px;
+  padding: 12px 20px;
+  border: 1px solid $ink;
+  color: $ink;
+  white-space: nowrap;
+
+  &:hover { color: $accent; border-color: $accent; }
+}
+
 // ---------------- Responsive collapse (single breakpoint) ----------------
 
 @media (max-width: 768px) {
   .wpcs-row,
   .wpcs-row--with-meta,
-  .wpcs-section-head {
+  .wpcs-section-head,
+  .wpcs-masthead__grid,
+  .wpcs-submit-cta {
     grid-template-columns: 1fr;
     gap: 16px;
+  }
+
+  .wpcs-formats,
+  .wpcs-editors {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .wpcs-topbar__inner {
@@ -366,6 +578,10 @@ main.content,
   .wpcs-topbar__meta { display: none; }
 
   .wpcs-wrap { padding: 0 20px; }
+  .wpcs-masthead { padding: 40px 20px 32px; }
+  .wpcs-section { padding: 48px 20px; }
+  .wpcs-section--flush { padding: 40px 20px 24px; }
+  .wpcs-masthead__vlabel { display: none; }
 
   .wpcs-foot__inner {
     grid-template-columns: 1fr 1fr;
@@ -374,4 +590,5 @@ main.content,
 
   .wpcs-hero-h1 { font-size: 40px; }
   .wpcs-page-h1 { font-size: 32px; }
+  .wpcs-hero-h1 + .wpcs-lead { margin-top: 40px; }
 }
