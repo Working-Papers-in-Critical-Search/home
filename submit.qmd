@@ -10,7 +10,7 @@ format:
 ```{=html}
 <section class="wpcs-wrap wpcs-masthead">
   <div class="wpcs-masthead__grid">
-    <div class="wpcs-micro">Submit<br>Issue №&nbsp;001</div>
+    <div class="wpcs-micro">Submit<br>Est. 2026</div>
     <div>
       <h1 class="wpcs-page-h1">Submit your work</h1>
       <p class="wpcs-lead">
@@ -19,7 +19,7 @@ format:
         handle the technical setup.
       </p>
     </div>
-    <div class="wpcs-masthead__vlabel">VOL.I · PRINTING 01 · 2026</div>
+    <div class="wpcs-masthead__vlabel">Paper count: 0</div>
   </div>
 </section>
 

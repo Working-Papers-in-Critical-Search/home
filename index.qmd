@@ -10,7 +10,7 @@ format:
 ```{=html}
 <section class="wpcs-wrap wpcs-masthead">
   <div class="wpcs-masthead__grid">
-    <div class="wpcs-micro">Issue №&nbsp;001<br>Spring 2026</div>
+    <div class="wpcs-micro">Est. 2026<br>Working papers</div>
     <div>
       <h1 class="wpcs-hero-h1">A home for history that <em>shows its work.</em></h1>
       <p class="wpcs-lead">
@@ -23,7 +23,7 @@ format:
         <a href="submit.html" class="wpcs-mono wpcs-cta">Submit your work →</a>
       </div>
     </div>
-    <div class="wpcs-masthead__vlabel">VOL.I · PRINTING 01 · 2026</div>
+    <div class="wpcs-masthead__vlabel">Paper count: 0</div>
   </div>
 </section>
 
@@ -65,7 +65,7 @@ format:
     <div class="wpcs-section-head">
       <div class="wpcs-micro">№ 02</div>
       <h2>Latest papers</h2>
-      <div class="wpcs-section-head__trailing">First issue forthcoming</div>
+      <div class="wpcs-section-head__trailing">Launch papers forthcoming</div>
     </div>
     <div class="wpcs-row">
       <div></div>
