@@ -1,13 +1,65 @@
 ---
 title: "Papers"
+pagetitle: "Papers — Working Papers in Critical Search"
+description: "All published working papers."
+format:
+  html:
+    page-layout: custom
+listing:
+  id: papers-list
+  contents: "*/index.qmd"
+  template: ../_listing-paper-row.ejs
+  sort: "date desc"
+  categories: false
+  feed: true
+  filter-ui: false
+  sort-ui: false
 ---
 
-Each paper lives in its own repository with its own DOI.
+```{=html}
+<section class="wpcs-wrap wpcs-masthead">
+  <div class="wpcs-masthead__grid">
+    <div class="wpcs-micro">All papers<br>Issue №&nbsp;001</div>
+    <div>
+      <h1 class="wpcs-page-h1">Papers</h1>
+      <p class="wpcs-lead">
+        Every paper is a standalone Quarto notebook with a permanent DOI.
+        Browse the full list below.
+      </p>
+    </div>
+    <div class="wpcs-masthead__vlabel">VOL.I · PRINTING 01 · 2026</div>
+  </div>
+</section>
 
-## How It Works
+<section class="wpcs-wrap wpcs-section">
+  <div class="wpcs-row">
+    <div class="wpcs-micro">Index</div>
+    <div>
+```
 
-Each paper is a separate GitHub repository under our organization. When a paper is ready, we tag a release and Zenodo automatically mints a DOI.
+::: {#papers-list}
+:::
 
-Papers can be updated anytime. New releases get new DOIs. Old versions remain citable.
-
-[Submit your own →](../submit.qmd)
+```{=html}
+      <div class="wpcs-empty" id="wpcs-empty-state" hidden>
+        <p class="wpcs-lead" style="max-width: 680px;">
+          No papers published yet. <em>Building Working Papers in Critical Search</em>
+          by the editors publishes at launch; two further papers follow shortly after.
+        </p>
+        <p class="wpcs-small-mono" style="margin-top: 20px;">
+          <a href="../submit.html" style="border-bottom: 1px solid var(--ink, #1a1a2e);">Submit your own →</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  (function () {
+    var list = document.getElementById("papers-list");
+    var empty = document.getElementById("wpcs-empty-state");
+    if (!list || !empty) return;
+    var hasItems = list.querySelector(".list, .quarto-listing, .card, .row, .wpcs-paper-list");
+    if (!hasItems) empty.hidden = false;
+  })();
+</script>
+```

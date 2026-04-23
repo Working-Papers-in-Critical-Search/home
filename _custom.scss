@@ -550,6 +550,74 @@ main.content,
   &:hover { color: $accent; border-color: $accent; }
 }
 
+// ---------------- Paper list rows (home + papers index) ----------------
+
+.wpcs-paper-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.wpcs-paper-row {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 32px;
+  align-items: start;
+  padding: 28px 0;
+  border-top: 1px solid $rule;
+  border-bottom: 0;
+  color: $ink;
+
+  &.is-first { border-top: 1px solid $ink; }
+  &:hover { color: $ink; border-top-color: $ink; }
+}
+
+.wpcs-paper-row__num {
+  font-family: $mono;
+  font-size: 13px;
+  color: $ink-mute;
+  padding-top: 4px;
+}
+
+.wpcs-paper-row__meta {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.wpcs-paper-row__title {
+  margin: 0 0 10px;
+  font-family: $serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  text-wrap: pretty;
+  max-width: 760px;
+}
+
+.wpcs-paper-row__authors { color: $ink-mute; }
+
+.wpcs-paper-row__tags {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.wpcs-paper-row__fp {
+  color: $ink-mute;
+  padding-top: 6px;
+}
+
+@media (max-width: 768px) {
+  .wpcs-paper-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .wpcs-paper-row__fp { display: none; }
+}
+
 // ---------------- Responsive collapse (single breakpoint) ----------------
 
 @media (max-width: 768px) {
