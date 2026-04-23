@@ -46,8 +46,12 @@ function tags(item) {
 %>
 
 <div class="wpcs-paper-list">
-<% for (var i = 0; i < items.length; i++) { var item = items[i]; %>
-  <a href="<%= item.path %>" class="wpcs-paper-row<%= i === 0 ? ' is-first' : '' %>">
+<% for (var i = 0; i < items.length; i++) {
+     var item = items[i];
+     var href = item.external || item.path;
+     var isExternal = !!item.external;
+%>
+  <a href="<%= href %>" class="wpcs-paper-row<%= i === 0 ? ' is-first' : '' %>"<% if (isExternal) { %> target="_blank" rel="noopener"<% } %>>
     <div class="wpcs-paper-row__num">№ <%= pad3(item.paper_id || (i + 1)) %></div>
     <div class="wpcs-paper-row__body">
       <div class="wpcs-paper-row__meta">
