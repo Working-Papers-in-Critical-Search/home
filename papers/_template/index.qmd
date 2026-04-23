@@ -1,0 +1,39 @@
+---
+# ─────────────────────────────────────────────────────────────
+# Paper stub template.
+#
+# Each paper lives in its own GitHub repo; this file is a local
+# metadata card that the /papers/ listing reads. Copy this directory
+# to papers/<slug>/ (drop the leading underscore) to register a paper.
+#
+# Required fields: title, author, date, paper_id, type, external.
+# Optional: version, doi, categories.
+# ─────────────────────────────────────────────────────────────
+
+title: "Paper title goes here"
+author:
+  - name: Author Name
+    affiliation: Institution
+  - name: Second Author
+    affiliation: Institution
+date: "2026-06-01"
+
+paper_id: "001"            # Zero-padded to 3 digits by the listing
+type: "draft"              # draft | dataset | method | short
+version: "v1.0"
+doi: "10.5281/zenodo.XXXXXXX"
+
+categories:
+  - text mining
+  - NLP
+
+# URL of the published paper (separate repo on GitHub Pages).
+# The listing row links here and opens in a new tab.
+external: "https://working-papers-in-critical-search.github.io/paper-001-short-title/"
+---
+
+This paper is published at its own site:
+[→ Read the paper](https://working-papers-in-critical-search.github.io/paper-001-short-title/)
+
+The canonical version lives in the paper's own repository. This page exists
+only so the main journal listing can index the paper's metadata.

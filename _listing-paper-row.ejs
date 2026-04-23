@@ -1,0 +1,78 @@
+<%
+// Deterministic 1-D barcode from a seed (DOI). Mirrors chrome.jsx Fingerprint.
+function fingerprint(seed, width, height) {
+  seed = String(seed || "");
+  var h = 5381;
+  for (var i = 0; i < seed.length; i++) h = (((h << 5) + h + seed.charCodeAt(i)) >>> 0);
+  var bars = [];
+  var cursor = 0;
+  var toggle = true;
+  while (cursor < width) {
+    h = ((h * 1103515245 + 12345) >>> 0);
+    var w = 1 + (h % 5);
+    if (toggle) bars.push('<rect x="' + cursor + '" y="0" width="' + w + '" height="' + height + '" fill="currentColor"/>');
+    cursor += w + 1;
+    toggle = !toggle;
+  }
+  return '<svg width="' + width + '" height="' + height + '" viewBox="0 0 ' + width + ' ' + height + '" aria-hidden="true" style="display:block">' + bars.join("") + '</svg>';
+}
+
+function fmtDate(iso) {
+  if (!iso) return "";
+  var d = new Date(String(iso) + "T00:00:00Z");
+  if (isNaN(d.getTime())) return String(iso);
+  var mo = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"][d.getUTCMonth()];
+  return String(d.getUTCDate()).padStart(2, "0") + " " + mo + " " + d.getUTCFullYear();
+}
+
+function pad3(n) { n = String(n || ""); while (n.length < 3) n = "0" + n; return n; }
+
+function authorNames(item) {
+  if (!item.author) return "";
+  if (Array.isArray(item.author)) {
+    return item.author.map(function (a) {
+      if (typeof a === "string") return a;
+      return a && a.name ? a.name : "";
+    }).filter(Boolean).join(" · ");
+  }
+  return String(item.author);
+}
+
+function tags(item) {
+  var t = item.tags || item.categories || [];
+  if (!Array.isArray(t)) return [];
+  return t;
+}
+%>
+
+<div class="wpcs-paper-list">
+<% for (var i = 0; i < items.length; i++) {
+     var item = items[i];
+     var href = item.external || item.path;
+     var isExternal = !!item.external;
+%>
+  <a href="<%= href %>" class="wpcs-paper-row<%= i === 0 ? ' is-first' : '' %>"<% if (isExternal) { %> target="_blank" rel="noopener"<% } %>>
+    <div class="wpcs-paper-row__num">№ <%= pad3(item.paper_id || (i + 1)) %></div>
+    <div class="wpcs-paper-row__body">
+      <div class="wpcs-paper-row__meta">
+        <span class="wpcs-tag"><%= item.type || "draft" %></span>
+        <span class="wpcs-small-mono"><%= fmtDate(item.date) %></span>
+        <% if (item.version) { %>
+          <span class="wpcs-small-mono">·</span>
+          <span class="wpcs-small-mono"><%= item.version %></span>
+        <% } %>
+      </div>
+      <h3 class="wpcs-paper-row__title"><%= item.title %></h3>
+      <div class="wpcs-small-mono wpcs-paper-row__authors"><%= authorNames(item) %></div>
+      <% var tagList = tags(item); if (tagList.length) { %>
+        <div class="wpcs-paper-row__tags">
+          <% for (var j = 0; j < tagList.length; j++) { %>
+            <span class="wpcs-tag"><%= tagList[j] %></span>
+          <% } %>
+        </div>
+      <% } %>
+    </div>
+    <div class="wpcs-paper-row__fp"><%- fingerprint(item.doi || item.path, 96, 20) %></div>
+  </a>
+<% } %>
+</div>

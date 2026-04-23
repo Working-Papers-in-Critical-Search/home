@@ -1,53 +1,157 @@
 ---
 title: "Working Papers in Critical Search"
-subtitle: "A home for history that shows its work"
+pagetitle: "Working Papers in Critical Search"
+description: "A home for history that shows its work."
+format:
+  html:
+    page-layout: custom
 ---
 
-## What We Publish
+```{=html}
+<section class="wpcs-wrap wpcs-masthead">
+  <div class="wpcs-masthead__grid">
+    <div class="wpcs-micro">Issue №&nbsp;001<br>Spring 2026</div>
+    <div>
+      <h1 class="wpcs-hero-h1">A home for history that <em>shows its work.</em></h1>
+      <p class="wpcs-lead">
+        A flexible venue for computational history — draft papers, dataset notes,
+        method sketches, and short pieces that don't fit traditional formats.
+        Code included, methods documented, limitations acknowledged.
+      </p>
+      <div class="wpcs-masthead__ctas">
+        <a href="papers.html" class="wpcs-mono wpcs-cta wpcs-cta--primary">Read the papers →</a>
+        <a href="submit.html" class="wpcs-mono wpcs-cta">Submit your work →</a>
+      </div>
+    </div>
+    <div class="wpcs-masthead__vlabel">VOL.I · PRINTING 01 · 2026</div>
+  </div>
+</section>
 
-**Working Papers in Critical Search** is a flexible venue for computational history. We publish:
+<section class="wpcs-wrap wpcs-section">
+  <div class="wpcs-section-head">
+    <div class="wpcs-micro">№ 01</div>
+    <h2>What we publish</h2>
+    <div class="wpcs-section-head__trailing">4 formats</div>
+  </div>
+  <div class="wpcs-row">
+    <div></div>
+    <div class="wpcs-formats">
+      <div class="wpcs-format-card">
+        <div class="wpcs-micro wpcs-format-card__idx">01</div>
+        <h3>Draft papers</h3>
+        <p>Drafts on their way to traditional journals — get citations and feedback while you revise.</p>
+      </div>
+      <div class="wpcs-format-card">
+        <div class="wpcs-micro wpcs-format-card__idx">02</div>
+        <h3>Dataset papers</h3>
+        <p>Documentation for the historical data you've created, with confidence reports and known limitations.</p>
+      </div>
+      <div class="wpcs-format-card">
+        <div class="wpcs-micro wpcs-format-card__idx">03</div>
+        <h3>Method notes</h3>
+        <p>Tools, pipelines, techniques — what works, what doesn't, with caveats.</p>
+      </div>
+      <div class="wpcs-format-card">
+        <div class="wpcs-micro wpcs-format-card__idx">04</div>
+        <h3>Short pieces</h3>
+        <p>Findings and arguments that don't fit the 8,000-word monograph shape.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-- **Draft papers** on their way to traditional journals
-- **Dataset papers** documenting historical data you've created
-- **Method notes** on tools, pipelines, or techniques
-- **Short pieces** that don't fit traditional formats
+<section class="wpcs-band">
+  <div class="wpcs-wrap">
+    <div class="wpcs-section-head">
+      <div class="wpcs-micro">№ 02</div>
+      <h2>Latest papers</h2>
+      <div class="wpcs-section-head__trailing">First issue forthcoming</div>
+    </div>
+    <div class="wpcs-row">
+      <div></div>
+      <div class="wpcs-empty">
+        <p class="wpcs-lead" style="max-width: 680px;">
+          The first paper — <em>Building Working Papers in Critical Search</em> by the editors —
+          publishes at launch. Two further papers follow within a fortnight.
+        </p>
+        <p class="wpcs-small-mono" style="margin-top: 20px;">
+          <a href="papers.html" style="border-bottom: 1px solid var(--ink, #1a1a2e);">All papers →</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-The common thread: **showing your work**. Include your code, describe your methods, and be transparent about what you did.
+<section class="wpcs-wrap wpcs-section">
+  <div class="wpcs-section-head">
+    <div class="wpcs-micro">№ 03</div>
+    <h2>How to cite</h2>
+    <div class="wpcs-section-head__trailing">DOI via Zenodo</div>
+  </div>
+  <div class="wpcs-row">
+    <div class="wpcs-small-mono" style="line-height: 1.7;">
+      Every paper gets a permanent DOI. Cite the specific version you used — we keep all versions citeable.
+    </div>
+    <div>
+      <pre class="wpcs-cite-block">Author (Year). "Title." Working Papers in Critical
+  Search, Paper NNN, vX.X.
+DOI: 10.5281/zenodo.XXXXXXX</pre>
+      <p class="wpcs-cite-note">
+        BibTeX and RIS exports are available on each paper's page. Versions are frozen for
+        citation on request; we also mint DOIs for significant revisions.
+      </p>
+    </div>
+  </div>
+</section>
 
-We focus on **critical search**: the intersection of historical inquiry and computational methods—NLP, machine learning, LLMs, geospatial analysis, linked data, knowledge graphs, and information retrieval applied to historical sources.
+<section class="wpcs-wrap wpcs-section">
+  <div class="wpcs-section-head">
+    <div class="wpcs-micro">№ 04</div>
+    <h2>Editors</h2>
+    <div class="wpcs-section-head__trailing">Two, for now</div>
+  </div>
+  <div class="wpcs-row">
+    <div></div>
+    <div class="wpcs-editors">
+      <div class="wpcs-editor">
+        <div class="wpcs-micro">Co-editor</div>
+        <h3><a href="https://www.joguldi.com/">Jo Guldi</a></h3>
+        <div class="wpcs-small-mono">Emory University</div>
+        <p>
+          Historian of modern Britain and the long history of land. Works on text mining of
+          parliamentary debates, historiography of the longue durée, and the ethics of
+          computational history.
+        </p>
+        <div class="wpcs-editor__tags">
+          <span class="wpcs-tag">19c Britain</span>
+          <span class="wpcs-tag">text mining</span>
+          <span class="wpcs-tag">land history</span>
+        </div>
+      </div>
+      <div class="wpcs-editor">
+        <div class="wpcs-micro">Co-editor</div>
+        <h3><a href="https://jburnford.github.io/">Jim Clifford</a></h3>
+        <div class="wpcs-small-mono">University of Saskatchewan</div>
+        <p>
+          Environmental historian working on commodity chains, GIS, and historical OCR.
+          Co-directs the Sustainability and the Hinterland project; builds tools for
+          historians who want to work with large, messy sources.
+        </p>
+        <div class="wpcs-editor__tags">
+          <span class="wpcs-tag">environmental history</span>
+          <span class="wpcs-tag">GIS</span>
+          <span class="wpcs-tag">Canadian history</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-New methods are emerging rapidly: multimodal LLMs that read handwritten documents, vision models that extract structure from historical maps, georeferencing pipelines that place sources in space, embedding models that find semantic connections across millions of pages. We want a place to document what works, what doesn't, and what historians should know about these tools.
-
-## Why Here?
-
-Traditional venues have constraints: word limits, format requirements, long timelines. We offer:
-
-1. **Flexibility** — Full papers, dataset notes, method sketches, whatever fits your work
-2. **Speed** — Publish in weeks, not months
-3. **Transparency** — Show your code, describe your methods honestly
-4. **Iteration** — Update your work as it develops; freeze versions for citation when ready
-
-## Latest Papers
-
-*Papers will appear here as they are published.*
-
-## How to Cite
-
-Each paper has a permanent DOI via Zenodo. Cite the specific version you used:
-
+<section class="wpcs-wrap wpcs-section wpcs-section--flush">
+  <div class="wpcs-submit-cta">
+    <div class="wpcs-micro">Note</div>
+    <h3>We welcome submissions from historians using computational methods.</h3>
+    <a href="submit.html" class="wpcs-mono wpcs-submit-cta__btn">Submit →</a>
+  </div>
+</section>
 ```
-Author (Year). "Title." Working Papers in Critical Search, Paper NNN, vX.X.
-DOI: 10.5281/zenodo.XXXXXXX
-```
-
-## Editors
-
-- **[Jo Guldi](https://www.joguldi.com/)** (Emory University)
-- **[Jim Clifford](https://jburnford.github.io/)** (University of Saskatchewan)
-
----
-
-::: {.callout-note}
-## Submit Your Work
-We welcome submissions from historians using computational methods. See our [submission guidelines](submit.qmd).
-:::

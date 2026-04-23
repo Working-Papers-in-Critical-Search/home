@@ -1,131 +1,203 @@
 ---
-title: "Submit Your Work"
+title: "Submit"
+pagetitle: "Submit — Working Papers in Critical Search"
+description: "How to submit a paper, dataset, method note, or short piece."
+format:
+  html:
+    page-layout: custom
 ---
 
-## What We're Looking For
+```{=html}
+<section class="wpcs-wrap wpcs-masthead">
+  <div class="wpcs-masthead__grid">
+    <div class="wpcs-micro">Submit<br>Issue №&nbsp;001</div>
+    <div>
+      <h1 class="wpcs-page-h1">Submit your work</h1>
+      <p class="wpcs-lead">
+        A web-based submission form is in the works. For now, submissions go
+        through a GitHub template workflow — or by email if you'd rather we
+        handle the technical setup.
+      </p>
+    </div>
+    <div class="wpcs-masthead__vlabel">VOL.I · PRINTING 01 · 2026</div>
+  </div>
+</section>
 
-We're a flexible venue. You might submit:
+<section class="wpcs-wrap wpcs-section">
+  <div class="wpcs-section-head">
+    <div class="wpcs-micro">№ 01</div>
+    <h2>What we're looking for</h2>
+    <div class="wpcs-section-head__trailing">4 formats</div>
+  </div>
+  <div class="wpcs-row">
+    <div class="wpcs-small-mono" style="line-height: 1.7;">
+      Four formats. For the full scope, see
+      <a href="about.html" style="border-bottom: 1px solid var(--ink, #1a1a2e);">About</a>.
+    </div>
+    <div>
+      <ul class="wpcs-prose-list">
+        <li><strong>Draft papers</strong> &mdash; something you're developing for a traditional journal. Get feedback, establish priority, iterate in public.</li>
+        <li><strong>Dataset papers</strong> &mdash; you built a historical dataset. Document it, share it, get credit for it.</li>
+        <li><strong>Method notes</strong> &mdash; you figured out how to do something useful. Write it up so others can learn.</li>
+        <li><strong>Short pieces</strong> &mdash; an observation, a benchmark, a comparison. Too small for a journal but worth sharing.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-- **A draft paper** — Something you're developing for a traditional journal. Get feedback, establish priority, iterate in public.
-- **A dataset paper** — You built a historical dataset. Document it, share it, get credit for it.
-- **A method note** — You figured out how to do something useful. Write it up so others can learn.
-- **A short piece** — An observation, a benchmark, a comparison. Too small for a journal but worth sharing.
+<section class="wpcs-band">
+  <div class="wpcs-wrap">
+    <div class="wpcs-section-head">
+      <div class="wpcs-micro">№ 02</div>
+      <h2>How to submit</h2>
+      <div class="wpcs-section-head__trailing">Five steps</div>
+    </div>
+    <div class="wpcs-row">
+      <div class="wpcs-small-mono" style="line-height: 1.7;">
+        Each paper is its own repository. You write it in your GitHub account,
+        then transfer it to the journal org when ready.
+      </div>
+      <div>
+        <ol class="wpcs-steps">
+          <li>
+            <div class="wpcs-micro">Step 01 — Create your paper repo</div>
+            <p>
+              From the
+              <a href="https://github.com/Working-Papers-in-Critical-Search/paper-template">paper template</a>,
+              click <strong>Use this template &rarr; Create a new repository</strong>. Create it in
+              your own GitHub account and name it something like
+              <code>paper-your-short-title</code>.
+            </p>
+          </li>
+          <li>
+            <div class="wpcs-micro">Step 02 — Write your paper</div>
+            <p>
+              Clone the repo and edit <code>index.qmd</code>. Structure it however makes sense
+              for the work. Preview locally with <code>quarto preview</code>. Include your code
+              (or describe your methods honestly) &mdash; if the analysis required an HPC cluster
+              and weeks of compute, say so.
+            </p>
+          </li>
+          <li>
+            <div class="wpcs-micro">Step 03 — Transfer to the organization</div>
+            <p>
+              When you're ready for editorial review: repo <strong>Settings &rarr; Danger Zone
+              &rarr; Transfer ownership</strong>, then transfer to
+              <code>Working-Papers-in-Critical-Search</code>. Full commit history, issues, and
+              everything else comes with it.
+            </p>
+          </li>
+          <li>
+            <div class="wpcs-micro">Step 04 — Editorial review</div>
+            <p>
+              Editors check fit with scope, that the code or method is documented enough to
+              follow, and that there are no obvious issues. Changes come through pull
+              requests. This is gatekeeping &mdash; fit and clarity &mdash; not three anonymous
+              reviewers.
+            </p>
+          </li>
+          <li>
+            <div class="wpcs-micro">Step 05 — Publication &amp; DOI</div>
+            <p>
+              We tag a release (<code>v1.0</code>). Zenodo archives the snapshot and mints a
+              DOI. The paper goes live on the journal site and joins the index.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
 
-Topics include but are not limited to:
+<section class="wpcs-wrap wpcs-section">
+  <div class="wpcs-section-head">
+    <div class="wpcs-micro">№ 03</div>
+    <h2>What we need from you</h2>
+    <div class="wpcs-section-head__trailing">Code · data · compute</div>
+  </div>
+  <div class="wpcs-row">
+    <div class="wpcs-small-mono" style="line-height: 1.7;">
+      Transparency, not one-click reproducibility.
+    </div>
+    <div>
+      <h3 class="wpcs-subhead">Code</h3>
+      <p>
+        Include your code or describe your methods. It does not need to run on a
+        reviewer's laptop. If you used a cluster with H100s for thirty hours, just
+        say so.
+      </p>
 
-- **Natural Language Processing** applied to historical corpora
-- **Machine learning** for document classification, OCR correction, or entity extraction
-- **Large language models** for transcription, summarization, and information extraction from historical sources
-- **Geospatial methods** including historical GIS, georeferencing, and spatial analysis
-- **Linked open data** and interoperable knowledge graphs
-- **Database design** and querying strategies for historical data
-- **Information retrieval** experiments on digitized archives
-- **Critical analysis** of search algorithms, AI systems, and their biases
+      <h3 class="wpcs-subhead">Data</h3>
+      <ul class="wpcs-prose-list">
+        <li><strong>Small data</strong> (&lt; 10 MB): include it in a <code>data/</code> folder</li>
+        <li><strong>Large data</strong>: host on Zenodo, Hugging Face, or another DOI repository and link to it</li>
+        <li><strong>Sensitive data</strong>: describe what you used and how others can access comparable sources</li>
+      </ul>
 
-## How to Submit
+      <h3 class="wpcs-subhead">Compute</h3>
+      <p>
+        We welcome work at any scale &mdash; laptop, single GPU, or a cluster with weeks
+        of runtime. Just be clear about what you used so readers can calibrate.
+      </p>
+    </div>
+  </div>
+</section>
 
-### Step 1: Create Your Paper Repo
+<section class="wpcs-wrap wpcs-section">
+  <div class="wpcs-section-head">
+    <div class="wpcs-micro">№ 04</div>
+    <h2>After publication</h2>
+    <div class="wpcs-section-head__trailing">Living documents</div>
+  </div>
+  <div class="wpcs-row">
+    <div class="wpcs-small-mono" style="line-height: 1.7;">
+      Papers are not frozen. Submit a PR any time.
+    </div>
+    <div>
+      <p>
+        Minor fixes &mdash; typos, broken links, small clarifications &mdash; merge
+        quickly and the site rebuilds. Major revisions warrant a new version
+        (<code>v1.1</code>, <code>v2.0</code>), a new release tag, and a new Zenodo
+        DOI. Previous versions remain citeable at their original DOIs.
+      </p>
+      <p class="wpcs-cite-note" style="margin-top: 20px;">
+        Optional: if a paper has strong technical contributions, we can help submit
+        a PDF snapshot to arXiv.
+      </p>
+    </div>
+  </div>
+</section>
 
-1. Go to our [paper template](https://github.com/Working-Papers-in-Critical-Search/paper-template)
-2. Click **"Use this template"** → **"Create a new repository"**
-3. Create it in **your own GitHub account** (not the org)
-4. Name it something like `paper-your-short-title`
+<section class="wpcs-wrap wpcs-section">
+  <div class="wpcs-section-head">
+    <div class="wpcs-micro">№ 05</div>
+    <h2>Not using Git?</h2>
+    <div class="wpcs-section-head__trailing">Email fallback</div>
+  </div>
+  <div class="wpcs-row">
+    <div class="wpcs-small-mono" style="line-height: 1.7;">
+      Editors can handle the technical setup on your behalf.
+    </div>
+    <div>
+      <p>Email us your materials and we'll take it from there:</p>
+      <ul class="wpcs-prose-list">
+        <li>Your notebook (<code>.qmd</code>, <code>.ipynb</code>, <code>.Rmd</code>, or Word + code files)</li>
+        <li>Any small data files</li>
+        <li>Author info (name, affiliation, ORCID if you have one)</li>
+      </ul>
+      <p style="margin-top: 20px;">
+        <a href="mailto:jim.clifford@usask.ca">jim.clifford@usask.ca</a> &middot;
+        <a href="mailto:jo.guldi@emory.edu">jo.guldi@emory.edu</a>
+      </p>
+    </div>
+  </div>
+</section>
 
-### Step 2: Write Your Paper
-
-Clone your repo and edit `index.qmd`. Structure it however makes sense for your work.
-
-```bash
-git clone https://github.com/YOUR-USERNAME/paper-your-title.git
-cd paper-your-title
-# edit index.qmd
-quarto preview  # see it locally
+<section class="wpcs-wrap wpcs-section wpcs-section--flush">
+  <div class="wpcs-submit-cta">
+    <div class="wpcs-micro">Questions</div>
+    <h3>Open an issue on GitHub or email the editors directly.</h3>
+    <a href="https://github.com/Working-Papers-in-Critical-Search/home/issues" class="wpcs-mono wpcs-submit-cta__btn">Open an issue &rarr;</a>
+  </div>
+</section>
 ```
-
-Include your code. If your analysis requires serious compute (HPC cluster, days of runtime), just say so honestly. The point is showing your work, not pretending everything runs on a laptop.
-
-### Step 3: Transfer to the Organization
-
-When you're ready for editorial review:
-
-1. Go to your repo's **Settings**
-2. Scroll to **Danger Zone**
-3. Click **Transfer ownership**
-4. Transfer to: `Working-Papers-in-Critical-Search`
-
-Your full commit history, issues, and everything else comes with it.
-
-### Step 4: Editorial Review
-
-We'll review your submission:
-
-- Does it fit our scope?
-- Is the code/method documented enough to understand?
-- Any obvious issues?
-
-We may request changes via pull request. This is gatekeeping, not formal peer review — we're checking for fit and clarity, not sending it to three anonymous reviewers.
-
-### Step 5: Publication
-
-Once accepted:
-
-1. We merge any final changes
-2. We create a **GitHub Release** (e.g., `v1.0`)
-3. **Zenodo automatically archives it and mints a DOI**
-4. Your paper appears on the main site
-
-## What We Need From You
-
-### Show Your Work
-
-Include your code or describe your methods. This doesn't mean it has to run on a reviewer's laptop — if you needed an HPC cluster with H100s and 30 hours of compute time, just tell us that. The point is transparency.
-
-### Data
-
-- **Small data** (< 10MB): Include it in the `data/` folder
-- **Large data**: Host on Zenodo, Hugging Face, or another repository with a DOI. Link to it in your paper.
-- **Sensitive data**: Describe what you used and how others might access similar sources
-
-### Honest Compute Requirements
-
-We welcome work at any scale:
-
-- **Laptop-scale**: Runs anywhere
-- **Server-scale**: Needs a GPU, takes hours
-- **Cluster-scale**: Needs HPC, takes days
-
-Just be clear about what you used.
-
-## After Publication
-
-### Updates
-
-Your paper is a living document. Submit a pull request to update it anytime. Minor fixes (typos, broken links) get merged quickly. Major revisions may warrant a new version number.
-
-### New Versions
-
-When you want to create a citable new version:
-
-1. Submit updates via PR
-2. We create a new release (`v1.1`, `v2.0`, etc.)
-3. Zenodo mints a new DOI for that version
-
-Previous versions remain citable at their original DOIs.
-
-### arXiv (Optional)
-
-If your paper has strong technical contributions, we can help submit a PDF snapshot to arXiv.
-
-## Not a Git User?
-
-Email us your materials and we'll handle the technical setup:
-
-- Your notebook (`.qmd`, `.ipynb`, `.Rmd`, or even Word + code files)
-- Any small data files
-- Author info (name, affiliation, ORCID if you have one)
-
-Contact: [jim.clifford@usask.ca](mailto:jim.clifford@usask.ca) or [jo.guldi@emory.edu](mailto:jo.guldi@emory.edu)
-
-## Questions?
-
-Open an [issue](https://github.com/Working-Papers-in-Critical-Search/home/issues) or email the editors.
