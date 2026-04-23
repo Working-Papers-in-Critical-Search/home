@@ -618,6 +618,78 @@ main.content,
   .wpcs-paper-row__fp { display: none; }
 }
 
+// ---------------- About page / prose ----------------
+
+.wpcs-prose-list {
+  font-family: $serif;
+  font-size: 18px;
+  line-height: 1.65;
+  color: $ink;
+  margin: 20px 0 0;
+  padding-left: 20px;
+
+  li + li { margin-top: 8px; }
+  strong { font-weight: 600; }
+}
+
+.wpcs-subhead {
+  font-family: $serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: $ink;
+  margin: 28px 0 10px;
+  letter-spacing: -0.005em;
+
+  &:first-child { margin-top: 0; }
+}
+
+.wpcs-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: wpcs-step;
+
+  li {
+    position: relative;
+    padding: 20px 0 20px 0;
+    border-top: 1px solid rgba($ink, 0.12);
+
+    &:last-child { border-bottom: 1px solid rgba($ink, 0.12); }
+
+    .wpcs-micro { margin-bottom: 8px; }
+    p {
+      font-family: $serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: $ink;
+      margin: 0;
+      max-width: 640px;
+    }
+  }
+}
+
+.wpcs-colophon {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: $mono;
+  font-size: 13px;
+  line-height: 1.55;
+  color: $ink;
+
+  td {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba($ink, 0.1);
+    vertical-align: top;
+  }
+  td:first-child {
+    font-weight: 600;
+    padding-right: 20px;
+    white-space: nowrap;
+    width: 1%;
+  }
+}
+
 // ---------------- Responsive collapse (single breakpoint) ----------------
 
 @media (max-width: 768px) {

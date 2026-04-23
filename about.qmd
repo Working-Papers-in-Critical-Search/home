@@ -1,74 +1,255 @@
 ---
 title: "About"
+pagetitle: "About — Working Papers in Critical Search"
+description: "Mission, scope, editorial philosophy, and publication lifecycle."
+format:
+  html:
+    page-layout: custom
 ---
 
-## Mission
+```{=html}
+<section class="wpcs-wrap wpcs-masthead">
+  <div class="wpcs-masthead__grid">
+    <div class="wpcs-micro">About<br>Issue №&nbsp;001</div>
+    <div>
+      <h1 class="wpcs-page-h1">About the journal</h1>
+      <p class="wpcs-lead">
+        A venue for historians doing computational work — a place to publish what
+        doesn't fit traditional journal shapes, and to show the code, the data,
+        and the limitations alongside the argument.
+      </p>
+    </div>
+    <div class="wpcs-masthead__vlabel">VOL.I · PRINTING 01 · 2026</div>
+  </div>
+</section>
 
-**Working Papers in Critical Search** is a flexible venue for historians doing computational work. We publish things that don't fit neatly into traditional journals:
+<section class="wpcs-wrap wpcs-section">
+  <div class="wpcs-section-head">
+    <div class="wpcs-micro">№ 01</div>
+    <h2>Mission</h2>
+    <div class="wpcs-section-head__trailing">Show your work</div>
+  </div>
+  <div class="wpcs-row">
+    <div class="wpcs-small-mono" style="line-height: 1.7;">
+      Four formats, one premise: methodology should be transparent and open
+      to revision.
+    </div>
+    <div>
+      <p class="wpcs-lead" style="max-width: 680px;">
+        Working Papers in Critical Search is a flexible venue for historians doing
+        computational work. We publish things that don't fit neatly into traditional journals:
+      </p>
+      <ul class="wpcs-prose-list">
+        <li>Draft papers you're developing for eventual journal submission</li>
+        <li>Dataset papers documenting collections you've built</li>
+        <li>Method notes on pipelines, tools, or techniques</li>
+        <li>Short pieces that are too small for a journal but too important to lose</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-- Draft papers you're developing for eventual journal submission
-- Dataset papers documenting collections you've built
-- Method notes on pipelines, tools, or techniques
-- Short pieces that are too small for a journal but too important to lose
+<section class="wpcs-wrap wpcs-section">
+  <div class="wpcs-section-head">
+    <div class="wpcs-micro">№ 02</div>
+    <h2>What is &ldquo;Critical Search&rdquo;?</h2>
+    <div class="wpcs-section-head__trailing">Methods in scope</div>
+  </div>
+  <div class="wpcs-row">
+    <div class="wpcs-small-mono" style="line-height: 1.7;">
+      How we find, filter, and interpret historical evidence with computational tools.
+    </div>
+    <div>
+      <ul class="wpcs-prose-list">
+        <li><strong>Natural language processing</strong> applied to historical corpora</li>
+        <li><strong>Machine learning</strong> for document classification, OCR correction, or entity extraction</li>
+        <li><strong>Large language models</strong> for transcription, summarization, and information extraction</li>
+        <li><strong>Geospatial methods</strong> including historical GIS, georeferencing, and spatial analysis</li>
+        <li><strong>Linked open data</strong> and interoperable knowledge graphs</li>
+        <li><strong>Database design</strong> and querying strategies for historical data</li>
+        <li><strong>Information retrieval</strong> experiments on digitized archives</li>
+        <li><strong>Critical analysis</strong> of search algorithms, AI systems, and their biases</li>
+      </ul>
+      <p class="wpcs-cite-note" style="margin-top: 20px;">
+        New methods are emerging rapidly — multimodal LLMs that read handwritten documents,
+        vision models that extract structure from historical maps, embedding models that find
+        semantic connections across millions of pages. We want a place to document what
+        works, what doesn't, and what historians should know about these tools.
+      </p>
+    </div>
+  </div>
+</section>
 
-We believe that historical methodology should be transparent and open to revision. Show your work.
+<section class="wpcs-band">
+  <div class="wpcs-wrap">
+    <div class="wpcs-section-head">
+      <div class="wpcs-micro">№ 03</div>
+      <h2>Editorial philosophy</h2>
+      <div class="wpcs-section-head__trailing">Three commitments</div>
+    </div>
+    <div class="wpcs-row">
+      <div></div>
+      <div class="wpcs-formats">
+        <div class="wpcs-format-card">
+          <div class="wpcs-micro wpcs-format-card__idx">01</div>
+          <h3>Living documents</h3>
+          <p>
+            Papers are not frozen. Authors update as libraries release new versions,
+            new sources appear, or readers suggest improvements. Each significant
+            revision gets a new version and a new DOI.
+          </p>
+        </div>
+        <div class="wpcs-format-card">
+          <div class="wpcs-micro wpcs-format-card__idx">02</div>
+          <h3>Show your work</h3>
+          <p>
+            Include the code, describe the methods. If your analysis required a
+            cluster and weeks of compute, say so — the point is transparency,
+            not one-click reproducibility.
+          </p>
+        </div>
+        <div class="wpcs-format-card">
+          <div class="wpcs-micro wpcs-format-card__idx">03</div>
+          <h3>Editorial gatekeeping</h3>
+          <p>
+            Editorial review, not formal peer review. Papers publish in weeks,
+            not months. Editors verify the argument and check that code runs.
+            Substantial revisions happen post-publication, in the open.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-## What is "Critical Search"?
+<section class="wpcs-wrap wpcs-section">
+  <div class="wpcs-section-head">
+    <div class="wpcs-micro">№ 04</div>
+    <h2>Publication lifecycle</h2>
+    <div class="wpcs-section-head__trailing">Submission → DOI</div>
+  </div>
+  <div class="wpcs-row">
+    <div class="wpcs-small-mono" style="line-height: 1.7;">
+      Each paper is its own GitHub repository. The main site links to papers
+      but doesn't contain them.
+    </div>
+    <div>
+      <ol class="wpcs-steps">
+        <li>
+          <div class="wpcs-micro">Step 01 — Submission</div>
+          <p>
+            Authors create a repo from the
+            <a href="https://github.com/Working-Papers-in-Critical-Search/paper-template">paper template</a>,
+            write the paper, and transfer the repo to the journal organization. Authors without
+            Git experience can email materials and editors handle the setup.
+          </p>
+        </li>
+        <li>
+          <div class="wpcs-micro">Step 02 — Editorial review</div>
+          <p>
+            Editors check fit with scope, that code and methods are documented, that the
+            argument is clear, and that the paper has no obvious errors. Requests for
+            changes go through GitHub Issues or PR comments.
+          </p>
+        </li>
+        <li>
+          <div class="wpcs-micro">Step 03 — Publication</div>
+          <p>
+            Paper repo is added to the public index. Quarto auto-renders to GitHub Pages.
+            First release (<code>v1.0</code>) is tagged; Zenodo archives the snapshot and
+            mints a DOI.
+          </p>
+        </li>
+        <li>
+          <div class="wpcs-micro">Step 04 — Revisions</div>
+          <p>
+            Minor fixes merge straight to <code>main</code> and the site rebuilds. Major
+            updates get a new version tag (<code>v1.1</code>, <code>v2.0</code>) and a new
+            Zenodo DOI; previous versions remain citeable.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
 
-Critical search examines how we find, filter, and interpret historical evidence using computational tools. This includes:
+<section class="wpcs-wrap wpcs-section">
+  <div class="wpcs-section-head">
+    <div class="wpcs-micro">№ 05</div>
+    <h2>Contributing</h2>
+    <div class="wpcs-section-head__trailing">Papers &amp; site</div>
+  </div>
+  <div class="wpcs-row">
+    <div class="wpcs-small-mono" style="line-height: 1.7;">
+      Three ways to contribute: submit a paper, improve an existing paper, or fix
+      something about the site.
+    </div>
+    <div>
+      <h3 class="wpcs-subhead">Submit a paper</h3>
+      <p>
+        See the <a href="submit.html">submission guide</a>. Quick version: start from
+        the paper template, write, transfer to the org, we review, we tag a release,
+        Zenodo mints a DOI.
+      </p>
 
-- **Natural Language Processing** applied to historical corpora
-- **Machine learning** for document classification, OCR correction, or entity extraction
-- **Large language models** for transcription, summarization, and information extraction from historical sources
-- **Geospatial methods** including historical GIS, georeferencing, and spatial analysis
-- **Linked open data** and interoperable knowledge graphs
-- **Database design** and querying strategies for historical data
-- **Information retrieval** experiments on digitized archives
-- **Critical analysis** of search algorithms, AI systems, and their biases
+      <h3 class="wpcs-subhead">Update a published paper</h3>
+      <p>
+        Papers are living documents. Fork the paper's repo, make changes, open a
+        pull request. Minor fixes merge quickly; major revisions get a new version
+        and DOI.
+      </p>
 
-New methods are emerging rapidly—multimodal LLMs that can read handwritten documents, vision models that extract structure from historical maps, georeferencing pipelines that place sources in space, embedding models that find semantic connections across millions of pages. We want a place to document what works, what doesn't, and what historians should know about these tools.
+      <h3 class="wpcs-subhead">Improve the website</h3>
+      <p>
+        Found a bug?
+        <a href="https://github.com/Working-Papers-in-Critical-Search/home/issues">Open an issue</a>.
+        Want to improve something? Fork the
+        <a href="https://github.com/Working-Papers-in-Critical-Search/home"><code>home</code> repo</a>,
+        make changes, test locally with <code>quarto preview</code>, and submit a pull request.
+      </p>
+    </div>
+  </div>
+</section>
 
-## Editorial Philosophy
+<section class="wpcs-wrap wpcs-section">
+  <div class="wpcs-section-head">
+    <div class="wpcs-micro">№ 06</div>
+    <h2>Colophon</h2>
+    <div class="wpcs-section-head__trailing">Stack, license, contact</div>
+  </div>
+  <div class="wpcs-row">
+    <div class="wpcs-small-mono" style="line-height: 1.7;">
+      Built on open infrastructure. Typeset in EB Garamond and JetBrains Mono.
+    </div>
+    <div>
+      <table class="wpcs-colophon">
+        <tbody>
+          <tr><td>GitHub</td><td>Version control, collaboration, living documents</td></tr>
+          <tr><td>Quarto</td><td>Renders notebooks to HTML and PDF</td></tr>
+          <tr><td>GitHub Pages</td><td>Free hosting</td></tr>
+          <tr><td>Zenodo</td><td>Permanent archiving, DOI minting</td></tr>
+          <tr><td>Hypothes.is</td><td>Page-level annotation and discussion</td></tr>
+          <tr><td>arXiv</td><td>Distribution to CS/AI communities (optional)</td></tr>
+          <tr><td>Hugging Face</td><td>Dataset and model hosting (when applicable)</td></tr>
+        </tbody>
+      </table>
 
-### Living Documents
+      <h3 class="wpcs-subhead" style="margin-top: 32px;">License</h3>
+      <p>
+        All content is published under
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+        Code is typically MIT-licensed unless otherwise specified by authors.
+      </p>
 
-Papers published here are not frozen. Authors may update their work as:
-
-- Code libraries release new versions
-- New data sources become available
-- Readers identify errors or suggest improvements
-
-Each significant update receives a new version number (v1.1, v1.2, etc.) and a new Zenodo DOI.
-
-### Show Your Work
-
-We ask that you include your code and describe your methods. This doesn't mean everything needs to be instantly reproducible on a laptop - if your analysis required an HPC cluster and weeks of compute, just say so. The point is transparency, not perfection.
-
-### Editorial Gatekeeping (Not Peer Review)
-
-We use editorial review rather than formal peer review:
-
-- **Speed**: Papers can be published within weeks, not months
-- **Quality**: Editors verify the argument and check that code runs
-- **Iteration**: Substantial revisions happen post-publication, in the open
-
-## Infrastructure
-
-| Component | Purpose |
-|-----------|---------|
-| **GitHub** | Version control, collaboration, living documents |
-| **Quarto** | Renders notebooks to HTML and PDF |
-| **GitHub Pages** | Free hosting |
-| **Zenodo** | Permanent archiving, DOI minting |
-| **Giscus** | Comments via GitHub Discussions |
-| **arXiv** | Distribution to CS/AI communities (optional) |
-| **Hugging Face** | Dataset/model hosting (when applicable) |
-
-## License
-
-All content is published under [CC-BY 4.0](LICENSE.md). Code is typically MIT-licensed unless otherwise specified by authors.
-
-## Contact
-
-- GitHub Issues: [Report a problem](https://github.com/Working-Papers-in-Critical-Search/home/issues)
-- Email: [jim.clifford@usask.ca](mailto:jim.clifford@usask.ca) or [jo.guldi@emory.edu](mailto:jo.guldi@emory.edu)
+      <h3 class="wpcs-subhead">Contact</h3>
+      <p>
+        <a href="https://github.com/Working-Papers-in-Critical-Search/home/issues">GitHub Issues</a>
+        for problems with the site.
+        For editorial questions:
+        <a href="mailto:jim.clifford@usask.ca">jim.clifford@usask.ca</a> or
+        <a href="mailto:jo.guldi@emory.edu">jo.guldi@emory.edu</a>.
+      </p>
+    </div>
+  </div>
+</section>
+```
