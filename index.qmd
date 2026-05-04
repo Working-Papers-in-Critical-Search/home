@@ -148,7 +148,7 @@ DOI: 10.5281/zenodo.XXXXXXX</pre>
 <section class="wpcs-wrap wpcs-section wpcs-section--flush">
   <div class="wpcs-submit-cta">
     <div class="wpcs-micro">Note</div>
-    <h3>We welcome submissions from historians using computational methods.</h3>
+    <h3>We welcome submissions at the intersection of history, computation, and critical approaches to political economy, empire, and environment.</h3>
     <a href="https://working-papers-in-critical-search.github.io/home/submit.html" class="wpcs-mono wpcs-submit-cta__btn">Submit →</a>
   </div>
 </section>
