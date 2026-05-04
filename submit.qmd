@@ -84,73 +84,80 @@ format:
     </div>
     <div class="wpcs-row">
       <div class="wpcs-small-mono" style="line-height: 1.7;">
-        Each paper is its own repository inside our organization. You write
-        on a branch, open a pull request when ready, and editors review in
-        the PR.
+        You write the paper. Editors handle the technical handoff — the
+        org repo, GitHub Pages, the release tag, the DOI.
       </div>
       <div>
         <ol class="wpcs-steps">
           <li>
-            <div class="wpcs-micro">Step 01 &mdash; Get access</div>
+            <div class="wpcs-micro">Step 01 &mdash; Tell us what you're working on</div>
             <p>
-              Email an editor with a one-paragraph description of the work
-              and your GitHub username. We'll either add you to the
-              <code>Working-Papers-in-Critical-Search</code> organization or, for
-              one-off submissions, add you as a collaborator on a single repo.
-              This is a one-time step; repeat contributors don't need to ask again.
-            </p>
-          </li>
-          <li>
-            <div class="wpcs-micro">Step 02 &mdash; Create your paper repo</div>
-            <p>
-              From the
-              <a href="https://github.com/Working-Papers-in-Critical-Search/paper-template">paper template</a>,
-              click <strong>Use this template &rarr; Create a new repository</strong>.
-              In the <em>Owner</em> dropdown choose
-              <code>Working-Papers-in-Critical-Search</code> &mdash; not your personal
-              account. Name it <code>paper-your-short-title</code>.
+              Email an editor with a one-paragraph description of the work,
+              the format you have in mind (draft / dataset / method note /
+              short piece), and a rough timeline. We'll respond with any
+              scope guidance and let you know we're expecting your draft.
             </p>
             <p style="margin-top: 12px;">
-              Then on the new repo: <strong>Settings &rarr; Pages &rarr; Source: GitHub Actions</strong>.
-              The first push will trigger a build; without this setting the
-              site won't deploy.
+              <a href="mailto:jim.clifford@usask.ca">jim.clifford@usask.ca</a> &middot;
+              <a href="mailto:jo.guldi@emory.edu">jo.guldi@emory.edu</a>
             </p>
           </li>
           <li>
-            <div class="wpcs-micro">Step 03 &mdash; Write on a branch</div>
-            <p>
-              Clone the repo and create a draft branch &mdash; <code>draft</code>,
-              <code>v1</code>, or whatever you like. Edit <code>index.qmd</code>;
-              structure it however makes sense. Preview locally with
-              <code>quarto preview</code>. Push as you go.
-            </p>
-            <p style="margin-top: 12px;">
-              Working on a branch keeps the published <code>main</code> clean while
-              you iterate. The Pages site only reflects what's been merged.
-            </p>
-          </li>
-          <li>
-            <div class="wpcs-micro">Step 04 &mdash; Open a pull request</div>
-            <p>
-              When you're ready for editorial review, open a PR from your
-              draft branch into <code>main</code>. Editors review in the PR
-              itself: line comments on specific passages, suggested edits, and
-              requested changes. Iterate on the same branch &mdash; new commits
-              update the PR automatically. This is gatekeeping for fit and
-              clarity, not three anonymous reviewers.
-            </p>
-          </li>
-          <li>
-            <div class="wpcs-micro">Step 05 &mdash; Merge, release, DOI</div>
-            <p>
-              Once the PR is approved and merged, the Pages site rebuilds and
-              the paper is live. We tag a release (<code>v1.0</code>); Zenodo
-              archives the snapshot and mints a DOI. Editors then add the
-              paper to the <a href="papers.html">papers index</a>.
-            </p>
+            <div class="wpcs-micro">Step 02 &mdash; Draft</div>
+            <p>Two ways, whichever you prefer:</p>
+            <ul class="wpcs-prose-list">
+              <li>
+                <strong>In your own GitHub repo.</strong> Use the
+                <a href="https://github.com/Working-Papers-in-Critical-Search/paper-template">paper template</a>'s
+                <em>Use this template</em> button to create a repo under
+                your own account. Edit <code>index.qmd</code>, structure
+                it however makes sense, preview locally with
+                <code>quarto preview</code>, commit as you go.
+              </li>
+              <li>
+                <strong>Send us a draft instead.</strong> A notebook
+                (<code>.qmd</code>, <code>.ipynb</code>, <code>.Rmd</code>),
+                a Word document with figures and code attached, or even
+                a directory of files &mdash; we'll handle the conversion.
+              </li>
+            </ul>
             <p style="margin-top: 12px;" class="wpcs-cite-note">
-              First-ever Pages deploy on a fresh repo can take 5&ndash;7 minutes
-              before the URL resolves. Subsequent deploys are quick.
+              Working in your own account means you can iterate freely
+              before anything is public.
+            </p>
+          </li>
+          <li>
+            <div class="wpcs-micro">Step 03 &mdash; Hand off to editors</div>
+            <p>
+              When the work is ready for editorial review, send the
+              editors your repo URL (or your draft files). We'll create a
+              fresh paper repo in the
+              <code>Working-Papers-in-Critical-Search</code> organization,
+              push your work into it, configure GitHub Pages, and add you
+              as a collaborator so you can respond to revision requests
+              without any further admin handshake.
+            </p>
+          </li>
+          <li>
+            <div class="wpcs-micro">Step 04 &mdash; Editorial review</div>
+            <p>
+              Editors review in pull-request comments &mdash; line comments
+              on specific passages, suggested edits, and requested changes.
+              You respond by pushing new commits to the org repo; the PR
+              updates automatically. Conversation continues in the same
+              place until everyone's happy. This is gatekeeping for fit
+              and clarity, not blind peer review.
+            </p>
+          </li>
+          <li>
+            <div class="wpcs-micro">Step 05 &mdash; Release and DOI</div>
+            <p>
+              Once review is complete, we tag a <code>v1.0</code> release.
+              Zenodo archives the snapshot and mints a DOI. The paper
+              joins the
+              <a href="https://working-papers-in-critical-search.github.io/home/papers/">papers index</a>
+              on this site. From that point the paper is live, citeable,
+              and revisable.
             </p>
           </li>
         </ol>
@@ -252,41 +259,29 @@ format:
 <section class="wpcs-wrap wpcs-section">
   <div class="wpcs-section-head">
     <div class="wpcs-micro">№ 06</div>
-    <h2>Other paths in</h2>
-    <div class="wpcs-section-head__trailing">Email &middot; transfer</div>
+    <h2>Already started somewhere else?</h2>
+    <div class="wpcs-section-head__trailing">Hand-off notes</div>
   </div>
   <div class="wpcs-row">
     <div class="wpcs-small-mono" style="line-height: 1.7;">
-      Two alternatives if the main path doesn't fit.
+      Most authors won't need this. Skip if your draft is in a notebook,
+      Word doc, or fresh GitHub repo.
     </div>
     <div>
-      <h3 class="wpcs-subhead">Email an editor (no Git required)</h3>
-      <p>Send your materials and we'll set up the repository for you:</p>
-      <ul class="wpcs-prose-list">
-        <li>Your notebook (<code>.qmd</code>, <code>.ipynb</code>, <code>.Rmd</code>, or Word + code files)</li>
-        <li>Any small data files</li>
-        <li>Author info (name, affiliation, ORCID if you have one)</li>
-      </ul>
-      <p style="margin-top: 12px;">
-        <a href="mailto:jim.clifford@usask.ca">jim.clifford@usask.ca</a> &middot;
-        <a href="mailto:jo.guldi@emory.edu">jo.guldi@emory.edu</a>
-      </p>
-
-      <h3 class="wpcs-subhead" style="margin-top: 32px;">Already drafting in your own GitHub account?</h3>
       <p>
-        If you've already created the repo under your personal account from
-        the template, you can transfer it to the organization when ready
-        (<strong>Settings &rarr; Danger Zone &rarr; Transfer ownership</strong>,
-        destination <code>Working-Papers-in-Critical-Search</code>). Two caveats
-        worth knowing:
+        If you've already published a draft of your paper as a Quarto
+        site, blog post, or preprint elsewhere, just send us the URL and
+        the source files when you're ready. We'll handle the rest in
+        Step 03.
       </p>
-      <ul class="wpcs-prose-list">
-        <li><strong>Wait at least 15 minutes after your first Pages deploy before initiating the transfer.</strong> GitHub holds an internal lock on freshly-deployed repos and the web UI fails silently with "Something went wrong!" during that window.</li>
-        <li>If a transfer attempt seems to hang in "Moving repository to..." for more than a few minutes, treat it as failed and email an editor &mdash; we can finish the move from the org side.</li>
-      </ul>
       <p style="margin-top: 12px;">
-        Whenever possible, prefer the create-directly-in-org path in §02.
-        It's strictly simpler.
+        If you've already transferred a paper repo into the
+        <code>Working-Papers-in-Critical-Search</code> organization
+        yourself, that's fine too &mdash; let us know and we'll pick up
+        editorial review from there. (Note: GitHub holds an internal
+        lock on freshly-deployed Pages repos for ~15 minutes; if a
+        transfer hangs in &ldquo;Moving repository to&hellip;&rdquo;,
+        treat it as failed and email us.)
       </p>
     </div>
   </div>

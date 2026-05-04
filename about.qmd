@@ -176,10 +176,14 @@ format:
         <li>
           <div class="wpcs-micro">Step 01 — Submission</div>
           <p>
-            Authors create a repo from the
-            <a href="https://github.com/Working-Papers-in-Critical-Search/paper-template">paper template</a>,
-            write the paper, and transfer the repo to the journal organization. Authors without
-            Git experience can email materials and editors handle the setup.
+            Authors draft in their own GitHub repo (forked from the
+            <a href="https://github.com/Working-Papers-in-Critical-Search/paper-template">paper template</a>)
+            or by sending the editors a notebook, Word doc, or
+            <code>.qmd</code> file. When the work is ready, the editors
+            handle the technical handoff &mdash; pulling the paper into
+            its own repo in the journal organization, configuring Pages,
+            and adding the author as a collaborator for any post-review
+            revisions.
           </p>
         </li>
         <li>
