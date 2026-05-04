@@ -43,8 +43,8 @@ listing:
 ```{=html}
       <div class="wpcs-empty" id="wpcs-empty-state" hidden>
         <p class="wpcs-lead" style="max-width: 680px;">
-          No papers published yet. <em>Building Working Papers in Critical Search</em>
-          by the editors publishes at launch; two further papers follow shortly after.
+          No papers published yet. Check back soon &mdash; the launch issue is
+          imminent.
         </p>
         <p class="wpcs-small-mono" style="margin-top: 20px;">
           <a href="../submit.html" style="border-bottom: 1px solid var(--ink, #1a1a2e);">Submit your own →</a>

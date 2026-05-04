@@ -19,7 +19,7 @@ format:
         and the limitations alongside the argument.
       </p>
     </div>
-    <div class="wpcs-masthead__vlabel">Paper count: 0</div>
+    <div class="wpcs-masthead__vlabel">Paper count: 1</div>
   </div>
 </section>
 
@@ -113,8 +113,10 @@ format:
           <h3>Editorial gatekeeping</h3>
           <p>
             Editorial review, not formal peer review. Papers publish in weeks,
-            not months. Editors verify the argument and check that code runs.
-            Substantial revisions happen post-publication, in the open.
+            not months. Editors check fit with scope, that the methods are
+            documented enough to follow, and that the evidentiary chain has no
+            obvious gaps. Substantial revisions happen post-publication, in the
+            open.
           </p>
         </div>
       </div>

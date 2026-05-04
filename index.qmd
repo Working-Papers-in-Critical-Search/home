@@ -44,7 +44,7 @@ format:
       <div class="wpcs-format-card">
         <div class="wpcs-micro wpcs-format-card__idx">02</div>
         <h3>Dataset papers</h3>
-        <p>Documentation for the historical data you've created, with confidence reports and known limitations.</p>
+        <p>Documentation for the historical data you've created, with sources, methods, and known limitations.</p>
       </div>
       <div class="wpcs-format-card">
         <div class="wpcs-micro wpcs-format-card__idx">03</div>
@@ -54,7 +54,7 @@ format:
       <div class="wpcs-format-card">
         <div class="wpcs-micro wpcs-format-card__idx">04</div>
         <h3>Short pieces</h3>
-        <p>Findings and arguments that don't fit the 8,000-word monograph shape.</p>
+        <p>Findings and arguments too small for a journal article but worth sharing — observations, benchmarks, comparisons.</p>
       </div>
     </div>
   </div>
@@ -127,17 +127,18 @@ DOI: 10.5281/zenodo.XXXXXXX</pre>
       </div>
       <div class="wpcs-editor">
         <div class="wpcs-micro">Co-editor</div>
-        <h3><a href="https://jburnford.github.io/">Jim Clifford</a></h3>
+        <h3><a href="https://jimclifford.ca/">Jim Clifford</a></h3>
         <div class="wpcs-small-mono">University of Saskatchewan</div>
         <p>
-          Environmental historian working on commodity chains, GIS, and historical OCR.
-          Co-directs the Sustainability and the Hinterland project; builds tools for
-          historians who want to work with large, messy sources.
+          Environmental historian at the University of Saskatchewan and co-editor of
+          <em>Historical Methods</em>. Researches the &ldquo;ghost acres&rdquo; that
+          sustained industrial cities and builds HGIS and text-mining tools for
+          environmental and settler-colonial history.
         </p>
         <div class="wpcs-editor__tags">
           <span class="wpcs-tag">environmental history</span>
-          <span class="wpcs-tag">GIS</span>
-          <span class="wpcs-tag">Canadian history</span>
+          <span class="wpcs-tag">HGIS</span>
+          <span class="wpcs-tag">commodity chains</span>
         </div>
       </div>
     </div>
