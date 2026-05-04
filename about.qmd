@@ -187,7 +187,7 @@ format:
     <div>
       <h3 class="wpcs-subhead">Submit a paper</h3>
       <p>
-        See the <a href="submit.html">submission guide</a>. Quick version: start from
+        See the <a href="https://working-papers-in-critical-search.github.io/home/submit.html">submission guide</a>. Quick version: start from
         the paper template, write, transfer to the org, we review, we tag a release,
         Zenodo mints a DOI.
       </p>

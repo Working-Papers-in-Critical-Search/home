@@ -19,8 +19,8 @@ format:
         Code included, methods documented, limitations acknowledged.
       </p>
       <div class="wpcs-masthead__ctas">
-        <a href="papers/" class="wpcs-mono wpcs-cta wpcs-cta--primary">Read the papers →</a>
-        <a href="submit.html" class="wpcs-mono wpcs-cta">Submit your work →</a>
+        <a href="https://working-papers-in-critical-search.github.io/home/papers/" class="wpcs-mono wpcs-cta wpcs-cta--primary">Read the papers →</a>
+        <a href="https://working-papers-in-critical-search.github.io/home/submit.html" class="wpcs-mono wpcs-cta">Submit your work →</a>
       </div>
     </div>
     <div class="wpcs-masthead__vlabel">Paper count: 1</div>
@@ -75,7 +75,7 @@ format:
           publishes at launch. Two further papers follow within a fortnight.
         </p>
         <p class="wpcs-small-mono" style="margin-top: 20px;">
-          <a href="papers/" style="border-bottom: 1px solid var(--ink, #1a1a2e);">All papers →</a>
+          <a href="https://working-papers-in-critical-search.github.io/home/papers/" style="border-bottom: 1px solid var(--ink, #1a1a2e);">All papers →</a>
         </p>
       </div>
     </div>
@@ -151,7 +151,7 @@ DOI: 10.5281/zenodo.XXXXXXX</pre>
   <div class="wpcs-submit-cta">
     <div class="wpcs-micro">Note</div>
     <h3>We welcome submissions from historians using computational methods.</h3>
-    <a href="submit.html" class="wpcs-mono wpcs-submit-cta__btn">Submit →</a>
+    <a href="https://working-papers-in-critical-search.github.io/home/submit.html" class="wpcs-mono wpcs-submit-cta__btn">Submit →</a>
   </div>
 </section>
 ```
