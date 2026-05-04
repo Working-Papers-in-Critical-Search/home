@@ -107,7 +107,7 @@ DOI: 10.5281/zenodo.XXXXXXX</pre>
   <div class="wpcs-section-head">
     <div class="wpcs-micro">№ 04</div>
     <h2>Editors</h2>
-    <div class="wpcs-section-head__trailing">Two, for now</div>
+    <div class="wpcs-section-head__trailing">Co-edited</div>
   </div>
   <div class="wpcs-row">
     <div></div>
