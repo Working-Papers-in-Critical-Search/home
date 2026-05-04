@@ -1,0 +1,27 @@
+---
+title: "Why a Working Paper Series on Critical Search Now"
+author:
+  - name: Jo Guldi
+    affiliation: Emory University
+  - name: Jim Clifford
+    affiliation: University of Saskatchewan
+date: "2026-05-04"
+
+paper_id: "001"
+type: "short"
+version: "v1.0"
+doi: "10.5281/zenodo.20028066"
+
+categories:
+  - critical search
+  - editorial
+  - infrastructure
+
+external: "https://working-papers-in-critical-search.github.io/paper-001-introduction/"
+---
+
+This paper is published at its own site:
+[→ Read the paper](https://working-papers-in-critical-search.github.io/paper-001-introduction/)
+
+The canonical version lives in the paper's own repository. This page exists
+only so the main journal listing can index the paper's metadata.
