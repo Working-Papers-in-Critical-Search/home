@@ -176,6 +176,12 @@ main.content,
     font-size: 17px;
     font-weight: 600;
     letter-spacing: -0.01em;
+    white-space: nowrap;
+
+    @media (max-width: 720px) {
+      white-space: normal;
+      max-width: 16ch;
+    }
 
     em {
       font-style: italic;
