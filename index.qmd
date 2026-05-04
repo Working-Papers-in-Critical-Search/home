@@ -65,15 +65,12 @@ format:
     <div class="wpcs-section-head">
       <div class="wpcs-micro">№ 02</div>
       <h2>Latest papers</h2>
-      <div class="wpcs-section-head__trailing">Launch papers forthcoming</div>
+      <div class="wpcs-section-head__trailing">1 published</div>
     </div>
     <div class="wpcs-row">
       <div></div>
-      <div class="wpcs-empty">
-        <p class="wpcs-lead" style="max-width: 680px;">
-          The first paper — <em>Building Working Papers in Critical Search</em> by the editors —
-          publishes at launch. Two further papers follow within a fortnight.
-        </p>
+      <div>
+<div class="wpcs-paper-list"><a href="https://working-papers-in-critical-search.github.io/paper-001-introduction/" class="wpcs-paper-row is-first" target="_blank" rel="noopener"><div class="wpcs-paper-row__num">№ 001</div><div class="wpcs-paper-row__body"><div class="wpcs-paper-row__meta"><span class="wpcs-tag">short</span><span class="wpcs-small-mono">05 MAY 2026</span><span class="wpcs-small-mono">·</span><span class="wpcs-small-mono">v1.0</span></div><h3 class="wpcs-paper-row__title">Why a Working Paper Series on Critical Search Now</h3><div class="wpcs-small-mono wpcs-paper-row__authors">Jo Guldi · Jim Clifford</div><div class="wpcs-paper-row__tags"><span class="wpcs-tag">critical search</span><span class="wpcs-tag">editorial</span><span class="wpcs-tag">infrastructure</span></div></div></a></div>
         <p class="wpcs-small-mono" style="margin-top: 20px;">
           <a href="https://working-papers-in-critical-search.github.io/home/papers/" style="border-bottom: 1px solid var(--ink, #1a1a2e);">All papers →</a>
         </p>
