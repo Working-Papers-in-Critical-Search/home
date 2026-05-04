@@ -14,9 +14,11 @@ format:
     <div>
       <h1 class="wpcs-hero-h1">A home for history that <em>shows its work.</em></h1>
       <p class="wpcs-lead">
-        A flexible venue for computational history — draft papers, dataset notes,
-        method sketches, and short pieces that don't fit traditional formats.
-        Code included, methods documented, limitations acknowledged.
+        A flexible venue for work at the intersection of history, computation,
+        and critical approaches to political economy, empire, and environment —
+        draft papers, dataset notes, method sketches, and short pieces that
+        don't fit traditional formats. Code included, methods documented,
+        limitations acknowledged.
       </p>
       <div class="wpcs-masthead__ctas">
         <a href="https://working-papers-in-critical-search.github.io/home/papers/" class="wpcs-mono wpcs-cta wpcs-cta--primary">Read the papers →</a>
@@ -148,7 +150,7 @@ DOI: 10.5281/zenodo.XXXXXXX</pre>
 <section class="wpcs-wrap wpcs-section wpcs-section--flush">
   <div class="wpcs-submit-cta">
     <div class="wpcs-micro">Note</div>
-    <h3>We welcome submissions at the intersection of history, computation, and critical approaches to political economy, empire, and environment.</h3>
+    <h3><strong>We welcome submissions at the intersection of history, computation, and critical approaches to political economy, empire, and environment</strong> &mdash; drafts, datasets, methods, and short pieces that show their work.</h3>
     <a href="https://working-papers-in-critical-search.github.io/home/submit.html" class="wpcs-mono wpcs-submit-cta__btn">Submit →</a>
   </div>
 </section>

@@ -14,9 +14,10 @@ format:
     <div>
       <h1 class="wpcs-page-h1">About the journal</h1>
       <p class="wpcs-lead">
-        A venue for historians doing computational work — a place to publish what
-        doesn't fit traditional journal shapes, and to show the code, the data,
-        and the limitations alongside the argument.
+        A venue for work at the intersection of history, computation, and
+        critical approaches to political economy, empire, and environment —
+        a place to publish what doesn't fit traditional journal shapes, and
+        to show the code, the data, and the limitations alongside the argument.
       </p>
     </div>
     <div class="wpcs-masthead__vlabel">Paper count: 1</div>
@@ -36,8 +37,18 @@ format:
     </div>
     <div>
       <p class="wpcs-lead" style="max-width: 680px;">
-        Working Papers in Critical Search is a flexible venue for historians doing
-        computational work. We publish things that don't fit neatly into traditional journals:
+        Working Papers in Critical Search publishes scholarship at the
+        intersection of history, computation, and critical approaches to
+        political economy, empire, and environment.
+      </p>
+      <p>
+        We are looking for work that treats method and interpretation as
+        inseparable: submissions should make their evidentiary chains
+        explicit &mdash; where sources originate, how they have been
+        transformed, how methods have been tested, what the data's
+        limitations are, and which passages substantiate the
+        interpretation. We publish things that don't fit neatly into
+        traditional journals:
       </p>
       <ul class="wpcs-prose-list">
         <li>Draft papers you're developing for eventual journal submission</li>
@@ -45,6 +56,10 @@ format:
         <li>Method notes on pipelines, tools, or techniques</li>
         <li>Short pieces that are too small for a journal but too important to lose</li>
       </ul>
+      <p class="wpcs-cite-note" style="margin-top: 16px;">
+        For the broader intellectual rationale, see the
+        <a href="https://working-papers-in-critical-search.github.io/paper-001-introduction/">introduction to the series</a>.
+      </p>
     </div>
   </div>
 </section>
@@ -53,28 +68,46 @@ format:
   <div class="wpcs-section-head">
     <div class="wpcs-micro">№ 02</div>
     <h2>What is &ldquo;Critical Search&rdquo;?</h2>
-    <div class="wpcs-section-head__trailing">Methods in scope</div>
+    <div class="wpcs-section-head__trailing">A scholarly orientation</div>
   </div>
   <div class="wpcs-row">
     <div class="wpcs-small-mono" style="line-height: 1.7;">
-      How we find, filter, and interpret historical evidence with computational tools.
+      Method and interpretation are inseparable. Show your evidentiary chain.
     </div>
     <div>
+      <p>
+        Critical search, as developed in Jo Guldi's
+        <em>The Dangerous Art of Text Mining</em>, is the practice of
+        interrogating how knowledge is retrieved, ranked, and assembled
+        &mdash; with attention to provenance, bias, and historical context.
+        It treats the act of search as itself an object of historical and
+        methodological scrutiny, not a transparent route to evidence.
+      </p>
+      <p>
+        For this series, critical search is both a method and a publishing
+        standard. We ask contributors to make their evidentiary chains
+        visible: readers should be able to see where sources originate, how
+        they have been transformed, how algorithms have been tested for
+        bias, how the dataset's own limitations have been interrogated, and
+        which specific passages substantiate a given interpretation. We
+        call this a &ldquo;white-box&rdquo; approach to digital history.
+      </p>
+
+      <h3 class="wpcs-subhead" style="margin-top: 32px;">Methods in scope</h3>
       <ul class="wpcs-prose-list">
         <li><strong>Natural language processing</strong> applied to historical corpora</li>
         <li><strong>Machine learning</strong> for document classification, OCR correction, or entity extraction</li>
         <li><strong>Large language models</strong> for transcription, summarization, and information extraction</li>
         <li><strong>Geospatial methods</strong> including historical GIS, georeferencing, and spatial analysis</li>
-        <li><strong>Linked open data</strong> and interoperable knowledge graphs</li>
+        <li><strong>Linked open data</strong> and knowledge graphs</li>
         <li><strong>Database design</strong> and querying strategies for historical data</li>
         <li><strong>Information retrieval</strong> experiments on digitized archives</li>
         <li><strong>Critical analysis</strong> of search algorithms, AI systems, and their biases</li>
       </ul>
       <p class="wpcs-cite-note" style="margin-top: 20px;">
-        New methods are emerging rapidly — multimodal LLMs that read handwritten documents,
-        vision models that extract structure from historical maps, embedding models that find
-        semantic connections across millions of pages. We want a place to document what
-        works, what doesn't, and what historians should know about these tools.
+        New methods are emerging rapidly. We want a place to document what
+        works, what doesn't, and what historians should know about these
+        tools.
       </p>
     </div>
   </div>
@@ -103,9 +136,12 @@ format:
           <div class="wpcs-micro wpcs-format-card__idx">02</div>
           <h3>Show your work</h3>
           <p>
-            Include the code, describe the methods. If your analysis required a
-            cluster and weeks of compute, say so — the point is transparency,
-            not one-click reproducibility.
+            Include the code, describe the methods, name the limitations.
+            The point is transparency about the analytical chain from
+            source to claim &mdash; not one-click reproducibility. If your
+            analysis required a cluster and weeks of compute, say so. If
+            your dataset has known gaps, say what they are. If your
+            interpretation rests on particular passages, point to them.
           </p>
         </div>
         <div class="wpcs-format-card">
