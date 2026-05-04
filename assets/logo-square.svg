@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Working Papers in Critical Search — square logo (1024x1024)
+  Typography mirrors the live site: EB Garamond for the wordmark
+  (italic on "in Critical Search"), JetBrains Mono for chrome labels.
+  Palette: ink #1a1a2e on paper #f4f4f2.
+
+  Sizes tuned to render legibly with both EB Garamond (browser via
+  Google Fonts @import) and the DejaVu Serif fallback used by
+  rsvg-convert when the named fonts aren't installed locally.
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1024 1024"
+     width="1024" height="1024"
+     role="img"
+     aria-label="Working Papers in Critical Search">
+  <defs>
+    <style type="text/css"><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500..600;1,400&family=JetBrains+Mono:wght@500&display=swap');
+      .bg     { fill: #f4f4f2; }
+      .border { fill: none; stroke: #1a1a2e; stroke-width: 2; opacity: 0.5; }
+      .micro  { font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+                font-size: 32px; letter-spacing: 4px;
+                text-transform: uppercase; fill: #6b6b7a; }
+      .word-1 { font-family: "EB Garamond", "Adobe Garamond Pro", "Garamond", Georgia, serif;
+                font-size: 88px; font-weight: 600; letter-spacing: -1.5px; fill: #1a1a2e; }
+      .word-2 { font-family: "EB Garamond", "Adobe Garamond Pro", "Garamond", Georgia, serif;
+                font-size: 76px; font-weight: 400; font-style: italic;
+                letter-spacing: -0.5px; fill: #1a1a2e; }
+      .rule   { stroke: #1a1a2e; stroke-width: 1; opacity: 0.4; }
+    ]]></style>
+  </defs>
+
+  <!-- paper background -->
+  <rect class="bg" width="1024" height="1024"/>
+
+  <!-- thin inset border -->
+  <rect class="border" x="56" y="56" width="912" height="912"/>
+
+  <!-- top mono label -->
+  <text class="micro" x="512" y="208" text-anchor="middle">Est. 2026</text>
+
+  <!-- thin rule under the top label -->
+  <line class="rule" x1="448" y1="240" x2="576" y2="240"/>
+
+  <!-- wordmark, two lines, centered -->
+  <text class="word-1" x="512" y="498" text-anchor="middle">Working Papers</text>
+  <text class="word-2" x="512" y="600" text-anchor="middle">in Critical Search</text>
+
+  <!-- thin rule above the bottom label -->
+  <line class="rule" x1="448" y1="800" x2="576" y2="800"/>
+
+  <!-- bottom mono label -->
+  <text class="micro" x="512" y="846" text-anchor="middle">A Journal</text>
+</svg>
