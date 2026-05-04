@@ -27,20 +27,50 @@ format:
   <div class="wpcs-section-head">
     <div class="wpcs-micro">№ 01</div>
     <h2>What we're looking for</h2>
-    <div class="wpcs-section-head__trailing">4 formats</div>
+    <div class="wpcs-section-head__trailing">Scope and formats</div>
   </div>
   <div class="wpcs-row">
     <div class="wpcs-small-mono" style="line-height: 1.7;">
-      Four formats. For the full scope, see
-      <a href="https://working-papers-in-critical-search.github.io/home/about.html" style="border-bottom: 1px solid var(--ink, #1a1a2e);">About</a>.
+      Method and interpretation are inseparable. Show your evidentiary chain.
     </div>
     <div>
+      <p>
+        <em>Working Papers in Critical Search</em> publishes work at the
+        intersection of history, computation, and critical approaches to
+        political economy, empire, and environment. We are looking for
+        scholarship that treats method and interpretation as inseparable:
+        submissions should make their evidentiary chains explicit &mdash;
+        where sources originate, how they have been transformed, how
+        methods have been tested, what the data's limitations are, and
+        which passages substantiate the interpretation.
+      </p>
+
+      <h3 class="wpcs-subhead" style="margin-top: 28px;">We publish in four formats</h3>
       <ul class="wpcs-prose-list">
         <li><strong>Draft papers</strong> &mdash; something you're developing for a traditional journal. Get feedback, establish priority, iterate in public.</li>
         <li><strong>Dataset papers</strong> &mdash; you built a historical dataset. Document it, share it, get credit for it.</li>
         <li><strong>Method notes</strong> &mdash; you figured out how to do something useful. Write it up so others can learn.</li>
         <li><strong>Short pieces</strong> &mdash; an observation, a benchmark, a comparison. Too small for a journal but worth sharing.</li>
       </ul>
+
+      <h3 class="wpcs-subhead" style="margin-top: 28px;">What falls outside our scope</h3>
+      <p>
+        We are not the right venue for finished historical essays that
+        gesture at computational tools without showing how they were used,
+        or for technical demonstrations on historical material without a
+        historical argument. We are also not a venue for very early drafts
+        seeking developmental feedback before they have an argument;
+        working papers should be coherent and citable in their current
+        form, even if the underlying research is ongoing.
+      </p>
+
+      <p class="wpcs-cite-note" style="margin-top: 16px;">
+        For the broader intellectual rationale, see the
+        <a href="https://working-papers-in-critical-search.github.io/paper-001-introduction/">introduction to the series</a>
+        and the
+        <a href="https://working-papers-in-critical-search.github.io/home/about.html">About</a>
+        page.
+      </p>
     </div>
   </div>
 </section>
