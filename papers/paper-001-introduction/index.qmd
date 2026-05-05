@@ -18,6 +18,16 @@ categories:
   - infrastructure
 
 external: "https://working-papers-in-critical-search.github.io/paper-001-introduction/"
+
+# This stub exists only so the journal listing can index the paper's metadata;
+# the canonical content lives at the external URL above. Tell search engines
+# to follow the canonical and skip the stub.
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="canonical" href="https://working-papers-in-critical-search.github.io/paper-001-introduction/">
+        <meta name="robots" content="noindex,follow">
 ---
 
 This paper is published at its own site:
