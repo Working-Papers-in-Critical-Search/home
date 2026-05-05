@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - "google*.html"   # Google Search Console verification
 
 website:
   title: "Working Papers in Critical Search"

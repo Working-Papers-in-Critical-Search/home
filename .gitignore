@@ -5,6 +5,7 @@
 *.html
 !index.html
 !_includes/*.html
+!google*.html
 
 # Python
 __pycache__/
