@@ -1,0 +1,36 @@
+---
+title: "A Cypher Knowledge Graph of British Imperial Territorial Evolution"
+author:
+  - name: Jim Clifford
+    affiliation: University of Saskatchewan
+date: "2026-05-14"
+
+paper_id: "002"
+type: "dataset"
+version: "v1.0"
+doi: "10.5281/zenodo.20189979"
+
+categories:
+  - knowledge graphs
+  - wikidata
+  - linked open data
+  - computational history
+
+external: "https://working-papers-in-critical-search.github.io/paper-002-empire-evolution/"
+
+# This stub exists only so the journal listing can index the paper's metadata;
+# the canonical content lives at the external URL above. Tell search engines
+# to follow the canonical and skip the stub.
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="canonical" href="https://working-papers-in-critical-search.github.io/paper-002-empire-evolution/">
+        <meta name="robots" content="noindex,follow">
+---
+
+This paper is published at its own site:
+[→ Read the paper](https://working-papers-in-critical-search.github.io/paper-002-empire-evolution/)
+
+The canonical version lives in the paper's own repository. This page exists
+only so the main journal listing can index the paper's metadata.
