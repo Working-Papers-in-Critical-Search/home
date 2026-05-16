@@ -9,6 +9,8 @@ website:
   description: "A home for history that shows its work"
   site-url: https://working-papers-in-critical-search.github.io/home/
   repo-url: https://github.com/Working-Papers-in-Critical-Search/home
+  open-graph: true
+  twitter-card: true
 
   # No navbar / page-footer — we inject custom chrome via includes.
   # No giscus — removed per design.
@@ -16,6 +18,8 @@ website:
 
 format:
   html:
+    filters:
+      - _filters/canonical.lua
     theme:
       - cosmo
       - _tokens.scss
