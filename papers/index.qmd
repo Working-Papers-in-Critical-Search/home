@@ -27,7 +27,7 @@ listing:
         Browse the full list below.
       </p>
     </div>
-    <div class="wpcs-masthead__vlabel">Paper count: 2</div>
+    <div class="wpcs-masthead__vlabel">Paper count: 3</div>
   </div>
 </section>
 

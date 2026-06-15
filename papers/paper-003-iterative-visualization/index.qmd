@@ -1,0 +1,37 @@
+---
+title: "What Became Possible: Iterative Visualization with an LLM as a Research Method in Computational History"
+author:
+  - name: Jessica Jack
+    affiliation: University of Saskatchewan
+date: "2026-06-15"
+
+paper_id: "003"
+type: "method"
+version: "v1.0"
+doi: "10.5281/zenodo.20706174"
+
+categories:
+  - computational history
+  - data visualization
+  - large language models
+  - settler colonialism
+  - historical GIS
+
+external: "https://working-papers-in-critical-search.github.io/paper-003-iterative-visualization/"
+
+# This stub exists only so the journal listing can index the paper's metadata;
+# the canonical content lives at the external URL above. Tell search engines
+# to follow the canonical and skip the stub.
+format:
+  html:
+    include-in-header:
+      text: |
+        <link rel="canonical" href="https://working-papers-in-critical-search.github.io/paper-003-iterative-visualization/">
+        <meta name="robots" content="noindex,follow">
+---
+
+This paper is published at its own site:
+[→ Read the paper](https://working-papers-in-critical-search.github.io/paper-003-iterative-visualization/)
+
+The canonical version lives in the paper's own repository. This page exists
+only so the main journal listing can index the paper's metadata.
