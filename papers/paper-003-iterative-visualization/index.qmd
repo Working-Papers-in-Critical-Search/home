@@ -3,6 +3,7 @@ title: "What Became Possible: Iterative Visualization with an LLM as a Research 
 author:
   - name: Jessica Jack
     affiliation: University of Saskatchewan
+    orcid: 0009-0007-6752-8896
 date: "2026-06-15"
 
 paper_id: "003"
